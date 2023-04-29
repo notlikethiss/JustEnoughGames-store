@@ -65,10 +65,10 @@ export const newGames:ICardItem[] = [
 		price: 2799
 	},
 	{
-		name: "Hogwarts Legacy",
+		name: "Slime Rancher 2",
 		description: "Открытый мир, Приключение",
-		image: "https://img.championat.com/s/735x490/news/big/h/b/kak-kupit-hogwarts-legacy-v-rossii_16756209041217051327.jpg",
+		image: "https://assets-prd.ignimgs.com/2022/09/22/slime-rancher-2-button-02-1663890048548.jpg",
 		filter: ['OpenWorld', 'Adventure'],
-		price: 4799
+		price: 799
 	},
 ]
