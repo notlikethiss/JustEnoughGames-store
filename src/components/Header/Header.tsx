@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Menu from '../Menu/Menu'
 
 import './header.style.scss'
 
 const Header:React.FC = () => {
 
-  return (
+  const [visible, setVisible] = useState(false)
 
+  return (
 	<header className='header'>
 		<div className='internal-header'>
 			<div className='left-side'>
-				<img className='menu-button' alt='menu' src='https://media.discordapp.net/attachments/888505536457367552/1101959347120111647/icons8-menu-100.png'></img>
+				<div onClick={() => visible ? setVisible(false) : setVisible(true)} className='menu-button'>
+					<img className='menu-image' alt='menu' src='https://media.discordapp.net/attachments/888505536457367552/1101959347120111647/icons8-menu-100.png'></img>
+				</div>
 				<h1 className='logo-font'>Just Enough Games</h1>
 			</div>
 			<div className='center'>
@@ -21,6 +25,9 @@ const Header:React.FC = () => {
 				<img className='cart' alt='cart' src='https://media.discordapp.net/attachments/888505536457367552/1101961803883368598/icons8-shopping-cart-90.png'></img>
 			</div>
 		</div>
+		{
+			visible ? <Menu /> : null
+		}
 	</header>
 	
   )

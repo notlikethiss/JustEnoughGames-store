@@ -12,7 +12,7 @@ const NewGames:React.FC = () => {
   return (
 	<div className='new-games'>
 		<div className='filters'>
-			<button onClick={() => setFilter('')} className='filter Adventure'>X</button>
+			<button onClick={() => setFilter('')} className='filter Clean'>Очистить фильтры</button>
 			<button onClick={() => setFilter('Adventure')} className='filter Adventure'>Приключение</button>
 			<button onClick={() => setFilter('RPG')} className='filter RPG'>RPG</button>
 			<button onClick={() => setFilter('OpenWorld')} className='filter OpenWorld'>Открытый мир</button>
@@ -49,6 +49,7 @@ const NewGames:React.FC = () => {
 							)
 						}
 					}
+					return null
 				})
 			}
 		</div>

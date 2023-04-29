@@ -1,0 +1,11 @@
+.menu {
+    position: absolute;
+    border-radius: 20px;
+    top: 93px;
+    left: 14px;
+    width: 320px;
+    height: 400px;
+    background: rgba(12, 12, 12, 0.5137254902);
+    backdrop-filter: blur(20px);
+	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
