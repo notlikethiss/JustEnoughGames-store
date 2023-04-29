@@ -9,7 +9,7 @@ const NewGames:React.FC = () => {
 
   return (
 	<div className='new-games'>
-		<h1>Новинки	</h1>
+		<h1 className='new-games-text'>Новинки</h1>
 		<div className='store-grid'>
 			{
 				newGames.map((item, index) => (

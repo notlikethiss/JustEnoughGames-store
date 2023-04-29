@@ -4,6 +4,20 @@
 	gap: 35px;
 }
 
+.new-games {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.new-games-text {
+	width: 100%;
+	margin-left: 45px;
+	text-align: left;
+	font-size: 55px;
+}
+
 @media screen and (max-width: 1800px) {
 	.store-grid {
 		grid-template-columns: repeat(5, 1fr);
@@ -32,11 +46,4 @@
 	.store-grid {
 		grid-template-columns: repeat(1, 1fr);
 	}
-}
-
-.new-games {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }

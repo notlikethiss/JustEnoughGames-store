@@ -10,7 +10,8 @@ const Header:React.FC = () => {
 	<header className='header'>
 		<div className='internal-header'>
 			<div className='left-side'>
-				<h1 className='logoFont'>Just Enough Games</h1>
+				<img className='menu-button' alt='menu' src='https://media.discordapp.net/attachments/888505536457367552/1101959347120111647/icons8-menu-100.png'></img>
+				<h1 className='logo-font'>Just Enough Games</h1>
 			</div>
 			<div className='center'>
 				<input placeholder='Поиск' className='search'></input>

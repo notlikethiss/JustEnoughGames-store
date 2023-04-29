@@ -1,25 +1,42 @@
 .carditem {
+	will-change: transform;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
+	justify-content: end;
 	width: 270px;
 	height: 470px;
 	margin: 0;
-	background: #141414;
+	background: #0f0f0f;
 	border-radius: 15px;
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 	&:hover {
-		transform: scale(1.009);
+		transform: scale(1.008);
 		filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.301));
 	}
 }
 
+.carditem-controls {
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	mask-position: 10px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+}
+
 .carditem-image {
 	border-radius: 15px;
-	width: 269px;
-	height: 300px;
 	background-size: cover;
-	background-repeat: no-repeat;
+	width: 270px;
+	height: 400px;
+}
+
+.image-border {
+	border-radius: 15px;
+	overflow: hidden;
+	width: 270px;
+	height: 400px;
 }
 
 .carditem-name {
@@ -53,7 +70,7 @@
 	margin: 0 0 10px 12px;
 	width: 270px;
 	height: 10px;
-	color: #818181;
+	color: #b3b3b3;
 }
 
 .carditem-price {
@@ -61,16 +78,4 @@
 	z-index: 10;
 	font-size: 25px;
 	margin: 10px 0 0 12px;
-}
-
-.blur {
-	width: 271px;
-	height: 450px;
-	position: absolute;
-	backdrop-filter: blur(30px);
-	mask: url('https://media.discordapp.net/attachments/888505536457367552/1101822176857948221/mask.png');
-	mask-type: alpha;
-	mask-position: bottom;
-	-webkit-mask-position: bottom;
-	-webkit-mask-position-y: 410px;
 }
