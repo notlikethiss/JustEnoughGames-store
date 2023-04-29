@@ -3,5 +3,6 @@ export interface ICardItem {
 	name: string
 	description: string
 	price: number
-	key?: number
+	filter: string[]
+	key?: number | string
 }

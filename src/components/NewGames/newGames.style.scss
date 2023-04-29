@@ -11,6 +11,27 @@
 	align-items: center;
 }
 
+.filters {
+	display: flex;
+	flex-direction: row;
+	width: calc(max-content + 50px);
+}
+
+.filter {
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	padding: 0 10px 0 10px;
+	margin: 0 5px 0 5px;
+	border-radius: 10px;
+	height: 25px;
+	background: #292929;
+	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	&:hover {
+		background: #494949;
+	}
+}
+
 .new-games-text {
 	width: 100%;
 	margin-left: 45px;
