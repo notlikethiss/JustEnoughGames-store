@@ -1,0 +1,42 @@
+.store-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 35px;
+}
+
+@media screen and (max-width: 1800px) {
+	.store-grid {
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.store-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.store-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.store-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.store-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.new-games {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

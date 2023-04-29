@@ -3,53 +3,68 @@
 	display: flex;
 	flex-direction: column;
 	width: 270px;
-	height: 480px;
+	height: 470px;
 	margin: 0;
 	background: #141414;
 	border-radius: 15px;
-	transition: all .5s linear;
+	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 	&:hover {
-		.carditem-image {
-			background-size: 150%;
-		}
+		transform: scale(1.009);
+		filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.301));
 	}
 }
 
 .carditem-image {
-	width: 270px;
+	border-radius: 15px;
+	width: 269px;
 	height: 300px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .carditem-name {
 	cursor: text;
+	font-size: 28px;
 	z-index: 10;
-	margin: 30px 0 0 10px;
+	margin: 10px 0 0 10px;
 }
 
 .carditem-button {
 	z-index: 10;
 	cursor: pointer;
+	font-size: 15px;
+	font-weight: 600;
 	width: 250px;
 	height: 35px;
-	margin: 20px 0 0 10px;
+	margin: 10px 0 0 10px;
 	border-radius: 10px;
 	color: inherit;
 	background: #363636;
 	border: none;
+	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	&:hover {
+		background: #4b4b4b;
+		filter: drop-shadow(0 0 0.75rem rgba(131, 131, 131, 0.11));
+	}
+}
+
+.carditem-description {
+	z-index: 10;
+	margin: 0 0 10px 12px;
+	width: 270px;
+	height: 10px;
+	color: #818181;
 }
 
 .carditem-price {
 	cursor: text;
 	z-index: 10;
 	font-size: 25px;
-	margin: 10px 0 0 10px;
+	margin: 10px 0 0 12px;
 }
 
 .blur {
-	width: 270px;
+	width: 271px;
 	height: 450px;
 	position: absolute;
 	backdrop-filter: blur(30px);
@@ -57,5 +72,5 @@
 	mask-type: alpha;
 	mask-position: bottom;
 	-webkit-mask-position: bottom;
-	-webkit-mask-position-y: 396px;
+	-webkit-mask-position-y: 410px;
 }
