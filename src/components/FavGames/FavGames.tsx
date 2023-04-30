@@ -1,10 +1,15 @@
 import React from 'react'
 
-import { devFavorite } from '../../data/dev.favorite'
-import './favgames.styles.scss'
+//components
 import CardItem from '../CardItem/CardItem'
 
-const FavGames = () => {
+//data
+import { devFavorite } from '../../data/dev.favorite'
+
+//styles
+import './favgames.styles.scss'
+
+const FavGames:React.FC = () => {
 
   return (
 

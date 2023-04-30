@@ -1,7 +1,9 @@
 import React from 'react'
 
+//types
 import { ICardItem } from '../../Types/ICardItem'
 
+//styles
 import './carditem.style.scss'
 
 const CardItem:React.FC<ICardItem> = (props) => {

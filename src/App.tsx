@@ -5,6 +5,8 @@ import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/Home/HomePage'
 import StorePage from './pages/Store/StorePage'
 import NotFoundPage from './pages/NotFound/NotFoundPage'
+
+//components
 import Header from './components/Header/Header'
 
 const App:React.FC = () => {

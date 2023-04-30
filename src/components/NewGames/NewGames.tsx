@@ -1,58 +1,21 @@
 import React, { useState } from 'react'
 
-import CardItem from '../CardItem/CardItem'
-import { newGames } from '../../data/new.games'
+//components
+import Filters from '../Filters/Filters'
+import GetNewGames from './GetNewGames'
 
+//styles
 import './newGames.style.scss'
 
 const NewGames:React.FC = () => {
-  
+
   const [filter, setFilter] = useState('')
 
   return (
 	<div className='new-games'>
-		<div className='filters'>
-			<button onClick={() => setFilter('')} className='filter Clean'>Очистить фильтры</button>
-			<button onClick={() => setFilter('Adventure')} className='filter Adventure'>Приключение</button>
-			<button onClick={() => setFilter('RPG')} className='filter RPG'>RPG</button>
-			<button onClick={() => setFilter('OpenWorld')} className='filter OpenWorld'>Открытый мир</button>
-			<button onClick={() => setFilter('Shooter')} className='filter Shooter'>Шутер</button>
-			<button onClick={() => setFilter('Horror')} className='filter Horror'>Хоррор</button>
-		</div>
+		<Filters filter={filter} setFilter={setFilter}/>
 		<h1 className='new-games-text'>Новинки</h1>
-		<div className='store-grid'>
-			{
-				newGames.map((item, index) => {
-					for(let i = 0; i < item.filter.length; i++){
-						if(item.filter[i] === filter){
-							return (
-								<CardItem 
-								key={index} 
-								name={item.name} 
-								description={item.description} 
-								filter={item.filter} 
-								image={item.image} 
-								price={item.price}
-								/>
-							)
-						}
-						if(!filter){
-							return (
-								<CardItem 
-								key={index} 
-								name={item.name} 
-								description={item.description} 
-								filter={item.filter} 
-								image={item.image} 
-								price={item.price}
-								/>
-							)
-						}
-					}
-					return null
-				})
-			}
-		</div>
+		<GetNewGames filter={filter} setFilter={setFilter}/>
 	</div>
   )
 }
