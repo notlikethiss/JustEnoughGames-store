@@ -1,5 +1,4 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
 
 //pages
 import HomePage from './pages/Home/HomePage'
@@ -8,6 +7,7 @@ import NotFoundPage from './pages/NotFound/NotFoundPage'
 
 //components
 import Header from './components/Header/Header'
+import { Route, Routes } from 'react-router-dom'
 
 const App:React.FC = () => {
 
