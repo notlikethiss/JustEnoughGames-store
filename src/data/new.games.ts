@@ -6,7 +6,8 @@ export const newGames:ICardItem[] = [
 		description: "Survival horror, Шутер",
 		image: "https://www.igroshop.com/images/detailed/12/Dead_Space_2023_box_art.jpg",
 		filter: ['Horror', 'Shooter'],
-		price: 4999,
+		price: 2790,
+		discount: 4999
 	},
 	{
 		name: "Atomic Heart",
@@ -34,7 +35,8 @@ export const newGames:ICardItem[] = [
 		description: "Открытый мир, Приключение",
 		image: "https://img.championat.com/s/735x490/news/big/h/b/kak-kupit-hogwarts-legacy-v-rossii_16756209041217051327.jpg",
 		filter: ['OpenWorld', 'Adventure'],
-		price: 4799
+		price: 2799,
+		discount: 4190
 	},
 	{
 		name: "Diablo IV",
@@ -55,7 +57,8 @@ export const newGames:ICardItem[] = [
 		description: "Шутер, Приключение",
 		image: "https://cdn1.epicgames.com/spt-assets/fa279ceff641422e88fef6207db56ada/dust-and-neon-3b7wd.jpg",
 		filter: ['Adventure', 'Shooter'],
-		price: 1299
+		price: 1299,
+		discount: 2899
 	},
 	{
 		name: "Redemption Reapers",
@@ -69,6 +72,7 @@ export const newGames:ICardItem[] = [
 		description: "Открытый мир, Приключение",
 		image: "https://assets-prd.ignimgs.com/2022/09/22/slime-rancher-2-button-02-1663890048548.jpg",
 		filter: ['OpenWorld', 'Adventure'],
-		price: 799
+		price: 799,
+		discount: 1190
 	},
 ]

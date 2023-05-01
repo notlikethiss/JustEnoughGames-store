@@ -25,6 +25,18 @@
 	border-radius: 15px;
 }
 
+.carditem-prices {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.carditem-discount {
+	color: #ff8686;
+	text-decoration: line-through;
+	margin: 0 10px 0 10px;
+}
+
 .carditem-image {
 	border-radius: 15px;
 	background-size: cover;

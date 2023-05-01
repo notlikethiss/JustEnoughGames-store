@@ -4,6 +4,7 @@ export interface ICardItem {
 	description: string
 	price: number
 	filter: string[]
+	discount?: string | number
 	key?: number | string
 	className?: string
 }

@@ -26,6 +26,7 @@ const GetNewGames:React.FC<IFilter> = (props) => {
 								filter={item.filter} 
 								image={item.image} 
 								price={item.price}
+								discount={item.discount}
 								/>
 							)
 						}
@@ -38,6 +39,7 @@ const GetNewGames:React.FC<IFilter> = (props) => {
 								filter={item.filter} 
 								image={item.image} 
 								price={item.price}
+								discount={item.discount}
 								/>
 							)
 						}

@@ -15,7 +15,10 @@ const CardItem:React.FC<ICardItem> = (props) => {
 		<div className='carditem-controls'>
 			<h1 className={`carditem-name ${props.className}`}>{props.name}</h1>
 			<p className='carditem-description'>{props.description}</p>
-			<span className='carditem-price'>{props.price} ₽</span>
+			<div className='carditem-prices'>
+				<span className='carditem-price'>{props.price} ₽</span>
+				{ props.discount ? <span className='carditem-discount'>{props.discount} ₽</span> : null}
+			</div>
 			<button className='carditem-button'>В корзину</button>
 		</div>
 	</div>
