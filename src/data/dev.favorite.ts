@@ -9,7 +9,7 @@ export const devFavorite:ICardItem[] = [
 		price: 1599,
 	},
 	{
-		name: "Dark Souls II : SotFS",
+		name: "Dark Souls II : Scholar of The First Sin",
 		description: "Action RPG, Souls like",
 		image: "https://m.media-amazon.com/images/M/MV5BYTI2MjE0YjQtYTc0Ni00Yzc4LTlkZWEtODMxZjA2ZWMyYjViXkEyXkFqcGdeQXVyMTI0MzA4NTgw._V1_.jpg",
 		filter: ['Action', 'RPG'],
@@ -25,7 +25,7 @@ export const devFavorite:ICardItem[] = [
 	{
 		name: "Elden Ring",
 		description: "Action RPG, Souls like",
-		image: "https://assets-prd.ignimgs.com/2021/06/12/elden-ring-button-03-1623460560664.jpg",
+		image: "https://media.discordapp.net/attachments/888505536457367552/1102507716406153226/image.png?width=506&height=554",
 		filter: ['Action', 'RPG'],
 		price: 3999
 	}

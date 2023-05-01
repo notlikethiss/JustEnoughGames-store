@@ -5,4 +5,5 @@ export interface ICardItem {
 	price: number
 	filter: string[]
 	key?: number | string
+	className?: string
 }

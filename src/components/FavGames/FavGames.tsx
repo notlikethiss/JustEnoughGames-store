@@ -25,6 +25,7 @@ const FavGames:React.FC = () => {
 						filter={item.filter} 
 						image={item.image} 
 						price={item.price}
+						className='dev'
 					/>
 				))
 			}

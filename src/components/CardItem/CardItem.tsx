@@ -13,7 +13,7 @@ const CardItem:React.FC<ICardItem> = (props) => {
 	<div className='carditem'>
 		<div className='carditem-image' style={{backgroundImage: `url(${props.image})`}}></div>
 		<div className='carditem-controls'>
-			<h1 className='carditem-name'>{props.name}</h1>
+			<h1 className={`carditem-name ${props.className}`}>{props.name}</h1>
 			<p className='carditem-description'>{props.description}</p>
 			<span className='carditem-price'>{props.price} ₽</span>
 			<button className='carditem-button'>В корзину</button>
