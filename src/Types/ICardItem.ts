@@ -5,6 +5,6 @@ export interface ICardItem {
 	price: number
 	filter: string[]
 	discount?: string | number
-	key?: number | string
+	key?: number
 	className?: string
 }

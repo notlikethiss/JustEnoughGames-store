@@ -9,7 +9,7 @@ import { newGames } from '../../data/new.games'
 //types
 import { IFilter } from '../../Types/IFilter'
 
-const GetNewGames:React.FC<IFilter> = (props) => {
+const GetNewGames:React.FC<IFilter> = ({ filter }) => {
 
   return (
 
@@ -17,7 +17,7 @@ const GetNewGames:React.FC<IFilter> = (props) => {
 			{
 				newGames.map((item, index) => {
 					for(let i = 0; i < item.filter.length; i++){
-						if(item.filter[i] === props.filter){
+						if(item.filter[i] === filter){
 							return (
 								<CardItem 
 								key={index} 
@@ -30,7 +30,7 @@ const GetNewGames:React.FC<IFilter> = (props) => {
 								/>
 							)
 						}
-						if(!props.filter){
+						if(!filter){
 							return (
 								<CardItem 
 								key={index} 

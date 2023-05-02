@@ -1,3 +1,19 @@
+@mixin rotateAnimation() {
+	cursor: pointer;
+	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	&:hover {
+		transform: rotate(90deg);
+	}
+}
+
+@mixin hoverAnimation() {
+	cursor: pointer;
+	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	&:hover {
+		filter: drop-shadow(0 0 20px #ffffff7e);
+	}
+}
+
 .header {
 	z-index: 100;
 	display: flex;
@@ -11,7 +27,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background: #0c0c0c83;
+	background: rgb(12 12 12 / 69%);
 	backdrop-filter: blur(35px);
 	width: calc(100% - 20px);
 	border-radius: 20px;
@@ -39,22 +55,14 @@
 }
 
 .menu-button {
-	cursor: pointer;
+	@include rotateAnimation();
 	margin: 0 50px 0 20px;
 	width: 30px;
 	height: 30px;
-	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-	&:hover {
-		transform: rotate(90deg);
-	}
 }
 
 .logo-font{
-	cursor: pointer;
-	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-	&:hover {
-		filter: drop-shadow(0 0 20px #ffffff7e);
-	}
+	@include hoverAnimation();
 }
 
 
