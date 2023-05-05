@@ -7,9 +7,9 @@ import CardItem from '../CardItem/CardItem'
 import { newGames } from '../../data/new.games'
 
 //types
-import { IFilter } from '../../Types/IFilter'
+import { IFilterState } from '../../Types/IFilterState'
 
-const GetNewGames:React.FC<IFilter> = ({ filter }) => {
+const GetNewGames:React.FC<IFilterState> = ({ filter }) => {
 
   return (
 

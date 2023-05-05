@@ -1,18 +1,24 @@
 import React from 'react'
 
-interface IFilterButton {
-	filterName:string
-	handleFilter:(filter:string) => void
-}
 
-const FilterButton:React.FC<IFilterButton> = ({ filterName, handleFilter }) => {
+import { IFilterButton } from '../../Types/IFilterButton'
+
+const FilterButton:React.FC<IFilterButton> = ({ filterName, setFilter, clean }) => {
+
+  const checkCleanFilters = (filterName:string) => {
+	if(filterName === 'Очистить фильтры'){
+		return ''
+	} else {
+		return filterName
+	}
+  }
 
   return (
 	<button 
-		onClick={() => handleFilter(`${filterName}`)} 
-		className={`filter ${filterName}`}
+		onClick={() => setFilter(checkCleanFilters(filterName))}
+		className={ clean ?`filter Clean` : `filter ${filterName}`}
 	>
-	{filterName}
+		{filterName}
 	</button>
   )
 }

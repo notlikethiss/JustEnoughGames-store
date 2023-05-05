@@ -1,24 +1,23 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 
-//types
-import { IFilter } from '../../Types/IFilter'
+//components
 import FilterButton from './FilterButton'
 
-const Filters:React.FC<IFilter> = ({ setFilter }) => {
+//data
+import { filters } from '../../data/filters'
 
-  const handleFilter = useCallback((filter:string) => {
-	setFilter(filter)
-  },[setFilter])
+//types
+import { IFilterState } from '../../Types/IFilterState'
 
-  const filtersArray:string[] = ['Приключение', 'RPG', 'Открытый мир', 'Шутер', 'Хоррор']
+const Filters:React.FC<IFilterState> = ({ setFilter, filter }) => {
 
   return (
 
 	<div className='filters'>
-			<FilterButton filterName={'Очистить фильтры'} handleFilter={handleFilter}/>
+			<FilterButton filterName={'Очистить фильтры'} setFilter={setFilter} clean={true}/>
 		{
-			filtersArray.map((item, index) => (
-				<FilterButton key={index} filterName={item} handleFilter={handleFilter}/>
+			filters.map((item, index) => (
+				<FilterButton key={index} filterName={item.filterName} setFilter={setFilter}/>
 			))
 		}
 	</div>

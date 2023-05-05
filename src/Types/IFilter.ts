@@ -1,4 +1,4 @@
 export interface IFilter {
+	filterName: string
 	filter: string
-	setFilter: (filter:string) => void
 }
