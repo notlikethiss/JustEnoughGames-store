@@ -1,5 +1,6 @@
 export interface IFilterButton {
-	filterName:string
+	filterName: string
+	filter: string
 	setFilter:(filter:string) => void
 	clean?: boolean
 }

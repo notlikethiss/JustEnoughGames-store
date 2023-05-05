@@ -3,7 +3,7 @@ import React from 'react'
 
 import { IFilterButton } from '../../Types/IFilterButton'
 
-const FilterButton:React.FC<IFilterButton> = ({ filterName, setFilter, clean }) => {
+const FilterButton:React.FC<IFilterButton> = ({ filterName, filter, setFilter, clean }) => {
 
   const checkCleanFilters = (filterName:string) => {
 	if(filterName === 'Очистить фильтры'){
@@ -15,7 +15,7 @@ const FilterButton:React.FC<IFilterButton> = ({ filterName, setFilter, clean }) 
 
   return (
 	<button 
-		onClick={() => setFilter(checkCleanFilters(filterName))}
+		onClick={() => setFilter(checkCleanFilters(filter))}
 		className={ clean ?`filter Clean` : `filter ${filterName}`}
 	>
 		{filterName}
