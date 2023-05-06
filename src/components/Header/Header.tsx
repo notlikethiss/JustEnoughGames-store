@@ -23,6 +23,7 @@ const Header:React.FC = () => {
 		</div>
 
 		{ visible ? <Menu /> : null }
+		
 	</header>
 	
   )

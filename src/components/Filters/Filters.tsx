@@ -14,12 +14,24 @@ const Filters:React.FC<IFilterState> = ({ setFilter, filter }) => {
   return (
 
 	<div className='filters'>
-			<FilterButton filter={''} filterName={'Очистить фильтры'} setFilter={setFilter} clean={true}/>
+
+			<FilterButton
+				filter={''} 
+				filterName={'Очистить фильтры'} 
+				setFilter={setFilter} 
+				clean={true}
+			/>
 		{
 			filters.map((item, index) => (
-				<FilterButton key={index} filter={item.filter} filterName={item.filterName} setFilter={setFilter}/>
+				<FilterButton 
+					key={index} 
+					filter={item.filter} 
+					filterName={item.filterName} 
+					setFilter={setFilter}
+				/>
 			))
 		}
+
 	</div>
 
   )

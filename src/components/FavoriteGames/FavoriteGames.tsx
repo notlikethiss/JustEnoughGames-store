@@ -7,9 +7,9 @@ import CardItem from '../CardItem/CardItem'
 import { devFavorite } from '../../data/dev.favorite'
 
 //styles
-import './favgames.styles.scss'
+import './favoritegames.styles.scss'
 
-const FavGames:React.FC = () => {
+const FavoriteGames:React.FC = () => {
 
   return (
 
@@ -37,4 +37,4 @@ const FavGames:React.FC = () => {
 
 }
 
-export default FavGames
+export default FavoriteGames

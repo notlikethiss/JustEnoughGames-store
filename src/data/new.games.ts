@@ -42,7 +42,7 @@ export const newGames:ICardItem[] = [
 		name: "Diablo IV",
 		description: "Action/RPG, Rougelike",
 		image: "https://upload.wikimedia.org/wikipedia/ru/0/08/Diablo_IV_Logo.png",
-		filter: ['Action', 'RPG'],
+		filter: ['Action', 'RPG', 'Rougelike'],
 		price: 3999
 	},
 	{
