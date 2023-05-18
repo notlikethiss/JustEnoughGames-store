@@ -12,13 +12,15 @@
 
 .searchBox {
 	backdrop-filter: blur(20px);
+	overflow-y: scroll;
 	display: grid;
 	padding: 40px;
 	gap: 40px;
 	justify-content: center;
 	grid-template-columns: 300px 300px 300px;
-	width: calc(100% - 400px);
-	height: 700px;
+	grid-template-rows: repeat(1fr 100px);
+	width: calc(100% - 500px);
+	height: 500px;
 	top: 100px;
 	border-radius: 15px;
 	position: absolute;

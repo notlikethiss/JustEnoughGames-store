@@ -13,42 +13,8 @@
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.Clean {
-	font-weight: 800;
-	background: #414141 !important;
-	&:hover {
-		background: #616161 !important;
-	}
-}
-
-.filters {
-	display: flex;
-	flex-direction: row;
-	width: calc(max-content + 50px);
-}
-
-.filter {
-	font-family: Nunito;
-	border: none;
-	color: inherit;
-	cursor: pointer;
-	padding: 0 20px 0 20px;
-	margin: 0 5px 0 5px;
-	border-radius: 10px;
-	height: 35px;
-	background: #292929;
-	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-	&:hover {
-		background: #494949;
-	}
-	&:focus {
-		background: #494949;
-	}
-}
-
 .new-games-text {
-	width: 100%;
-	margin-left: 45px;
+	margin: 50px;
 	text-align: left;
 	font-size: 55px;
 }

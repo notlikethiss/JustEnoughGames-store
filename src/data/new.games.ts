@@ -75,4 +75,5 @@ export const newGames:ICardItem[] = [
 		price: 799,
 		discount: 1190
 	},
+	
 ]

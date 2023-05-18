@@ -9,6 +9,8 @@ import { filters } from '../../data/filters'
 //types
 import { IFilterState } from '../../Types/IFilterState'
 
+import './filters.style.scss'
+
 const Filters:React.FC<IFilterState> = ({ setFilter, filter }) => {
 
   return (

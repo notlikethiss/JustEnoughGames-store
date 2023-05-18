@@ -1,13 +1,15 @@
 import React from 'react'
 
+//components
 import CardItem from '../../CardItem/CardItem'
 
+//data
 import { newGames } from '../../../data/new.games'
+
+//types
 import { ISearch } from '../../../Types/ISearch'
 
 const SearchBox:React.FC<ISearch> = ({ searchValue }) => {
-
-  console.log(searchValue)
 
   const filteredGames = newGames.filter(item => {
 	return item.name.toLowerCase().includes(searchValue.toLowerCase())
