@@ -19,7 +19,7 @@ const FilterButton:React.FC<IFilterButton> = ({ filterName, filter, setFilter, c
 
 	<button 
 		onClick={() => setFilter(checkCleanFilters(filter))}
-		className={ clean ?`filter Clean` : `filter ${filterName}`}
+		className={ clean ? 'filter Clean' : `filter ${filterName}`}
 	>
 		{filterName}
 	</button>

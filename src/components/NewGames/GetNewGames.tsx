@@ -20,26 +20,26 @@ const GetNewGames:React.FC<IFilterState> = ({ filter }) => {
 						if(item.filter[i] === filter){
 							return (
 								<CardItem 
-								key={index} 
-								name={item.name} 
-								description={item.description} 
-								filter={item.filter} 
-								image={item.image} 
-								price={item.price}
-								discount={item.discount}
+									key={index} 
+									name={item.name} 
+									description={item.description} 
+									filter={item.filter} 
+									image={item.image} 
+									price={item.price}
+									discount={item.discount}
 								/>
 							)
 						}
 						if(!filter){
 							return (
-								<CardItem 
-								key={index} 
-								name={item.name} 
-								description={item.description} 
-								filter={item.filter} 
-								image={item.image} 
-								price={item.price}
-								discount={item.discount}
+								<CardItem
+									key={index} 
+									name={item.name} 
+									description={item.description} 
+									filter={item.filter} 
+									image={item.image} 
+									price={item.price}
+									discount={item.discount}
 								/>
 							)
 						}

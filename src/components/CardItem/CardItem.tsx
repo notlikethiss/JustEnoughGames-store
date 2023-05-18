@@ -11,7 +11,11 @@ const CardItem:React.FC<ICardItem> = ({ name, image, className, price, descripti
   return (
 
 	<div className='carditem'>
-		<div className='carditem-image' style={{backgroundImage: `url(${image})`}}></div>
+		<div 
+			className='carditem-image' 
+			style={{backgroundImage: `url(${image})`}}
+		>
+		</div>
 		<div className='carditem-controls'>
 			<h1 className={`carditem-name ${className}`}>{name}</h1>
 			<p className='carditem-description'>{description}</p>

@@ -1,11 +1,29 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 
-const Search:React.FC = () => {
+import './search.style.scss'
+
+import { ISearch } from '../../../Types/ISearch'
+
+const Search:React.FC<ISearch> = ({ setSearchValue, setVisibleSearch, searchValue }) => {
+
+  useEffect(() => {
+	if(searchValue) {
+		setVisibleSearch(true)
+	} else {
+		setVisibleSearch(false)
+	}
+  })
 
   return (
 
 	<div className='center'>
-		<input placeholder='Поиск' className='search'></input>
+		<input 
+			type='text'
+			onChange={(event) => setSearchValue(event.currentTarget.value)} 
+			placeholder='Поиск' 
+			className='search'
+		>
+		</input>
 	</div>
 
   )

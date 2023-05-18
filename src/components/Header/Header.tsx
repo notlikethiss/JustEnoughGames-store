@@ -1,29 +1,40 @@
 import React, { useState } from 'react'
 
 //components
-import Menu from '../Menu/Menu'
 import Logo from './Logo/Logo'
 import ActionPanel from './ActionPanel/ActionPanel'
 import Search from './Search/Search'
+import SearchBox from './Search/SearchBox'
 
 //styles
 import './header.style.scss'
 
 const Header:React.FC = () => {
 
-  const [visible, setVisible] = useState(false)
+  const [visibleSearch, setVisibleSearch] = useState<boolean>(false)
+  const [searchValue, setSearchValue] = useState<string>('')
 
   return (
 	<header className='header'>
-		
 		<div className='internal-header'>
-			<Logo visible={visible} setVisible={setVisible}/>
-			<Search />
+			<Logo />
+			<Search 
+				setVisibleSearch={setVisibleSearch} 
+				searchValue={searchValue} 
+				setSearchValue={setSearchValue}
+			/>
 			<ActionPanel />
 		</div>
-
-		{ visible ? <Menu /> : null }
-		
+		{ 
+			visibleSearch
+			? 
+			<SearchBox 
+				searchValue={searchValue} 
+				setSearchValue={setSearchValue} 
+				setVisibleSearch={setVisibleSearch}/> 
+			: 
+			null 
+		}
 	</header>
 	
   )

@@ -3,7 +3,7 @@ import React from 'react'
 //styles
 import './menu.style.scss'
 
-const Menu = () => {
+const Menu:React.FC = () => {
 
   return (
 
