@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
 
 	<div className='search-notfound'>
-		<h1 className='search-notfound-text'>Не удалось ничего найти по вашему запросу</h1>
+		<h1 className='search-notfound-text'>Не удалось найти по вашему запросу</h1>
 		<img 
 			alt='emoji' 
 			className='search-image' 

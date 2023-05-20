@@ -17,13 +17,17 @@ const Header:React.FC = () => {
   return (
 	<header className='header'>
 		<div className='internal-header'>
+
 			<Logo />
+
 			<Search 
 				setVisibleSearch={setVisibleSearch} 
 				searchValue={searchValue} 
 				setSearchValue={setSearchValue}
 			/>
+			
 			<ActionPanel />
+
 		</div>
 		{ 
 			visibleSearch

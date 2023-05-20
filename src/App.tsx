@@ -7,13 +7,15 @@ import NotFoundPage from './pages/NotFound/NotFoundPage'
 
 //components
 import Header from './components/Header/Header'
-import { Route, Routes, Router } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
 const App:React.FC = () => {
 
   return (
     <>
+    
       <Header/>
+
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/store' element={<StorePage/>}/>

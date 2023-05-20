@@ -31,12 +31,12 @@
 
 .internal-header {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	background: rgb(12 12 12 / 69%);
-	backdrop-filter: blur(35px);
-	width: calc(100% - 20px);
-	border-radius: 20px;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(12 12 12 / 85%);
+    backdrop-filter: blur(55px);
+    width: calc(100% - 20px);
+    border-radius: 20px;
 }
 
 .right-side {
@@ -66,12 +66,9 @@
 }
 
 
-.link {
+.header-link {
 	text-decoration: none;
 	color: inherit;
-	font-size: 28px;
-	font-weight: 600;
-	margin: 0 25px 0 25px;
 }
 
 .center {
