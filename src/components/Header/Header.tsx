@@ -31,7 +31,8 @@ const Header:React.FC = () => {
 			<SearchBox 
 				searchValue={searchValue} 
 				setSearchValue={setSearchValue} 
-				setVisibleSearch={setVisibleSearch}/> 
+				setVisibleSearch={setVisibleSearch}
+			/> 
 			: 
 			null 
 		}

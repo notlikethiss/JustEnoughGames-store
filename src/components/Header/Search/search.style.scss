@@ -13,6 +13,7 @@
 .searchBox {
 	backdrop-filter: blur(20px);
 	overflow-y: scroll;
+	border: 20px solid transparent;
 	display: grid;
 	padding: 40px;
 	gap: 40px;
@@ -25,4 +26,34 @@
 	border-radius: 15px;
 	position: absolute;
 	background: rgba(12, 12, 12, 0.781);
+}
+
+.searchBox::-webkit-scrollbar-track {
+	width: 20px;
+}
+
+.searchBox::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: rgba(12, 12, 12, 0.781);
+}
+
+.searchBox::-webkit-scrollbar {
+	border-radius: 10px;
+	background: rgba(70, 70, 70, 0.37);
+}
+
+.search-notfound {
+    top: 200px;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}
+
+.search-image {
+	margin: 40px;
+	width: 100px;
 }
