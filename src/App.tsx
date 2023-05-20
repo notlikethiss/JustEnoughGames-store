@@ -4,11 +4,11 @@ import React from 'react'
 import HomePage from './pages/Home/HomePage'
 import StorePage from './pages/Store/StorePage'
 import NotFoundPage from './pages/NotFound/NotFoundPage'
+import ProductPage from './pages/ProductPage/ProductPage'
 
 //components
 import Header from './components/Header/Header'
 import { Route, Routes } from 'react-router-dom'
-import Product from './pages/Product/Product'
 
 const App:React.FC = () => {
 
@@ -21,7 +21,7 @@ const App:React.FC = () => {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/store' element={<StorePage/>}/>
         <Route path='*' element={<NotFoundPage/>}/>
-        <Route path='/products/:id' element={<Product />}/>
+        <Route path='/products/:id' element={<ProductPage />}/>
       </Routes>
     
     </>

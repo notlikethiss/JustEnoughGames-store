@@ -9,7 +9,7 @@ import { database } from '../../data/database'
 //types
 import { IFilterState } from '../../Types/IFilterState'
 
-const GetNewGames:React.FC<IFilterState> = ({ filter }) => {
+const GetGames:React.FC<IFilterState> = ({ filter }) => {
 
   return (
 
@@ -54,4 +54,4 @@ const GetNewGames:React.FC<IFilterState> = ({ filter }) => {
   )
 }
 
-export default GetNewGames
+export default GetGames

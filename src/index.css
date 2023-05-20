@@ -9,3 +9,17 @@ body {
   overflow-x: hidden;
   color: #ebebeb;
 }
+
+body::-webkit-scrollbar {
+  border-radius: 10px;
+	background:  rgba(12, 12, 12, 0.781);
+}
+
+body::-webkit-scrollbar-track {
+	width: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: rgba(49, 49, 49, 0.37);
+}

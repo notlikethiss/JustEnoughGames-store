@@ -1,6 +1,6 @@
 import React from 'react'
 
-import NewGames from '../../components/NewGames/NewGames'
+import Games from '../../components/Games/Games'
 
 import './store.style.scss'
 
@@ -8,7 +8,7 @@ const StorePage:React.FC = () => {
 
   return (
     <div className='store'>
-      <NewGames/>
+      <Games />
     </div>
   )
 }
