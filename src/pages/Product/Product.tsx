@@ -1,16 +1,37 @@
 import React from 'react'
 
-import { ICardItem } from '../../Types/ICardItem'
+import { useParams } from 'react-router-dom'
+import CardItem from '../../components/CardItem/CardItem'
 
-const Product:React.FC<ICardItem> = ({ name, price, image, description }) => {
+import { database } from '../../data/database'
+
+const Product:React.FC = () => {
+
+  const { name } = useParams()
+
+  const filteredGames = database.filter(item => {
+	return (
+		item.name === name
+	)
+  })
 
   return (
 
 	<div className='product'>
-		<h1>{name}</h1>
-		<img src={image} alt='product'></img>
-		<span>{price}</span>
-		<p>{description}</p>
+		{
+			filteredGames.map((item) => (
+				<CardItem
+					key={item.id} 
+					name={item.name} 
+					description={item.description} 
+					filter={item.filter} 
+					image={item.image} 
+					price={item.price}
+					discount={item.discount}
+					id={item.id}
+				/>
+			))
+		}
 	</div>
 
   )

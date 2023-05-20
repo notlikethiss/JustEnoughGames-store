@@ -5,14 +5,14 @@ import CardItem from '../../CardItem/CardItem'
 import NotFound from './NotFound'
 
 //data
-import { newGames } from '../../../data/new.games'
+import { database } from '../../../data/database'
 
 //types
 import { ISearch } from '../../../Types/ISearch'
 
 const SearchBox:React.FC<ISearch> = ({ searchValue }) => {
 
-  const filteredGames = newGames.filter(item => {
+  const filteredGames = database.filter(item => {
 	return (
 		item.name.toLowerCase().includes(searchValue.toLowerCase())
 	)
@@ -26,16 +26,17 @@ const SearchBox:React.FC<ISearch> = ({ searchValue }) => {
 
 			? <NotFound /> :
 
-			filteredGames.map((item, index) => (
+			filteredGames.map((item) => (
 
 				<CardItem
-					key={index}
+					key={item.id}
 					name={item.name}
 					description={item.description}
 					filter={item.filter}
 					image={item.image}
 					price={item.price}
 					discount={item.discount}
+					id={item.id}
               />
 
 			))

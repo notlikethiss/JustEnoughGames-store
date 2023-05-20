@@ -8,6 +8,7 @@ import NotFoundPage from './pages/NotFound/NotFoundPage'
 //components
 import Header from './components/Header/Header'
 import { Route, Routes } from 'react-router-dom'
+import Product from './pages/Product/Product'
 
 const App:React.FC = () => {
 
@@ -20,7 +21,7 @@ const App:React.FC = () => {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/store' element={<StorePage/>}/>
         <Route path='*' element={<NotFoundPage/>}/>
-        <Route path='/products/:id' element=''/>
+        <Route path='/products/:id' element={<Product />}/>
       </Routes>
     
     </>
