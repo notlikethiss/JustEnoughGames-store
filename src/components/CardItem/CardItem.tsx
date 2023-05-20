@@ -5,17 +5,23 @@ import { ICardItem } from '../../Types/ICardItem'
 
 //styles
 import './carditem.style.scss'
+import { Link, redirect } from 'react-router-dom'
 
-const CardItem:React.FC<ICardItem> = ({ name, image, className, price, description, discount }) => {
+const CardItem:React.FC<ICardItem> = ({ name, image, className, price, description, discount, id }) => {
+
+  const privateURL:string = `/products/${id}`
+  
 
   return (
 
 	<div className='carditem'>
-		<div 
-			className='carditem-image' 
-			style={{backgroundImage: `url(${image})`}}
-		>
-		</div>
+		<Link to={privateURL} className='carditem-link'>
+			<div 
+				className='carditem-image' 
+				style={{backgroundImage: `url(${image})`}}
+			>
+			</div>
+		</Link>
 		<div className='carditem-controls'>
 			<h1 className={`carditem-name ${className}`}>{name}</h1>
 			<p className='carditem-description'>{description}</p>
