@@ -130,5 +130,14 @@ export const database:ICardItem[] = [
 		developer: "Fromsoftware",
 		price: 3999,
 		id: 14
+	},
+	{
+		name: "Geometry Dash",
+		description: "Rhytm, Platformer",
+		image: "https://static-cdn.jtvnw.net/ttv-boxart/460951_IGDB-272x380.jpg",
+		filter: ['Action'],
+		developer: "RobTop Games",
+		price: 249,
+		id: 15
 	}
 ]

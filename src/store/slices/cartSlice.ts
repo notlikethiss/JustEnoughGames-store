@@ -4,7 +4,7 @@ import type { RootState } from "../store"
 const initialState:any = []
 
 export const cartSlice = createSlice({
-	name: 'Cart',
+	name: 'cartFluid',
 	initialState,
 	reducers: {
 		addToCart: (state, { payload: item }) => {
@@ -15,6 +15,6 @@ export const cartSlice = createSlice({
 
 export const { addToCart } = cartSlice.actions
 
-export const SelectCart = (state: RootState) => state.Cart.value
+export const SelectCart = (state: RootState) => state.cartFluid.value
 
 export default cartSlice.reducer

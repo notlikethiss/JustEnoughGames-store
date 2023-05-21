@@ -1,23 +1,33 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 
 //types
 import { ICardItem } from '../../Types/ICardItem'
 
+//redux-toolkit
+import { useAppDispatch } from '../../hooks'
+import { addToCart } from '../../store/slices/cartSlice'
+
 //styles
 import './product.style.scss'
 
-const Product:React.FC<ICardItem> = ({ name, description, price, id, filter, image, developer }) => {
+const Product:React.FC<ICardItem> = (product) => {
+
+	const dispatch = useAppDispatch()
+
+	const cartHandler = useCallback(() => {
+	  dispatch(addToCart(product))
+	}, [product, dispatch])
 
   return (
 
 	<div className='product-card'>
-		<div className='product-image' style={{backgroundImage: `url(${image})`}}/>
+		<div className='product-image' style={{backgroundImage: `url(${product.image})`}}/>
 		<div className='product-rightSide'>
-			<h1 className='product-name'>{name}</h1>
-			<p className='product-dev'>{developer}</p>
-			<p className='product-category'>{description}</p>
-			<span className='product-price'>{price} ₽</span>
-			<button className='product-button'>В корзину</button>
+			<h1 className='product-name'>{product.name}</h1>
+			<p className='product-dev'>{product.developer}</p>
+			<p className='product-category'>{product.description}</p>
+			<span className='product-price'>{product.price} ₽</span>
+			<button onClick={cartHandler} className='product-button'>В корзину</button>
 		</div>
 	</div>
 

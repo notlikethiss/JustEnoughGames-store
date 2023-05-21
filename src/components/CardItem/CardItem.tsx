@@ -6,6 +6,7 @@ import { ICardItem } from '../../Types/ICardItem'
 //redux-toolkit
 import { useAppDispatch } from '../../hooks'
 import { addToCart } from '../../store/slices/cartSlice'
+
 //styles
 import './carditem.style.scss'
 import { Link } from 'react-router-dom'
@@ -16,7 +17,7 @@ const CardItem:React.FC<ICardItem> = (product) => {
 
   const dispatch = useAppDispatch()
 
-  const favoriteHandler = useCallback(() => {
+  const cartHandler = useCallback(() => {
 	dispatch(addToCart(product))
   }, [product, dispatch])
 
@@ -37,7 +38,7 @@ const CardItem:React.FC<ICardItem> = (product) => {
 				<span className='carditem-price'>{product.price} ₽</span>
 				{ product.discount ? <span className='carditem-discount'>{product.discount} ₽</span> : null}
 			</div>
-			<button onClick={favoriteHandler} className='carditem-button'>В корзину</button>
+			<button onClick={cartHandler} className='carditem-button'>В корзину</button>
 		</div>
 	</div>
 

@@ -1,35 +1,55 @@
 import React from 'react'
 
 import { useAppSelector } from '../../hooks'
-import CardItem from '../CardItem/CardItem'
+import CartProduct from './CartProduct/CartProduct'
 
 //types
 import { ICardItem } from '../../Types/ICardItem'
+import { ICart } from '../../Types/ICart'
 
-const Cart:React.FC = () => {
+import './cart.style.scss'
 
-  const { Cart } = useAppSelector((state) => state)
+const Cart:React.FC<ICart> = ({ visibleCart }) => {
 
-  return (
+  const { cartFluid } = useAppSelector((state) => state)
 
-	<div className='cart'>
-		{
-			Cart.map((item:ICardItem) => (
-				<CardItem 
-					key={item.id} 
-					name={item.name} 
-					description={item.description} 
-					filter={item.filter} 
-					image={item.image} 
-					price={item.price}
-					discount={item.discount}
-					id={item.id}
-				/>
-			))
-		}
-	</div>
+  const fullPrice = cartFluid.reduce((acc:number, item:ICardItem) => {
+		return acc + item.price
+  }, 0)
 
-  )
+  if(visibleCart) {
+
+	return (
+		<div className='cart-menu'>
+			<div className='cart-list'>
+				{
+					cartFluid.map((item:ICardItem, index:number) => (
+						<CartProduct
+							key={index} 
+							name={item.name} 
+							description={item.description} 
+							filter={item.filter} 
+							image={item.image} 
+							price={item.price}
+							discount={item.discount}
+							id={item.id}
+						/>
+					))
+				}
+			</div>
+			<div className='cart-confirm'>
+				<p className='cart-fullprice'>Итого: { fullPrice } ₽</p>
+				<button className='confirm-button'>Оформить заказ</button>
+			</div>
+		</div>
+	  )
+
+  } else {
+
+	return null
+
+  }
+
 }
 
 export default Cart
