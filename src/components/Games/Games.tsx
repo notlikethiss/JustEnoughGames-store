@@ -14,7 +14,7 @@ const Games:React.FC = () => {
   return (
 	<div className='new-games'>
 		<Filters filter={filter} setFilter={setFilter}/>
-		<h1 className='new-games-text'>Новинки</h1>
+		<h1 className='new-games-text'>Каталог</h1>
 		
 		<GetGames filter={filter} setFilter={setFilter}/>
 	</div>

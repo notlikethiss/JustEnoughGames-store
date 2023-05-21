@@ -16,10 +16,12 @@
 	background: #292929;
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 	&:hover {
-		background: #494949;
+		color: #292929;
+		background: #ebebeb;
 	}
 	&:focus {
-		background: #494949;
+		color: #292929;
+		background: #ebebeb;
 	}
 }
 
@@ -27,6 +29,7 @@
 	font-weight: 800;
 	background: #414141;
 	&:hover {
-		background: #616161;
+		color: #292929;
+		background: #ebebeb;
 	}
 }

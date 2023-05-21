@@ -77,8 +77,8 @@
 	border: none;
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 	&:hover {
-		background: #4b4b4b;
-		filter: drop-shadow(0 0 0.75rem rgba(131, 131, 131, 0.11));
+		color: #292929;
+		background: #ebebeb;
 	}
 }
 

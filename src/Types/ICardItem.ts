@@ -7,5 +7,6 @@ export interface ICardItem {
 	discount?: string | number
 	key?: number
 	className?: string
+	developer?: string
 	id: number
 }

@@ -1,10 +1,14 @@
 import React from 'react'
 
-import { useParams } from 'react-router-dom'
-import CardItem from '../../components/CardItem/CardItem'
-
-import { database } from '../../data/database'
+//components
 import Product from '../../components/Product/Product'
+
+//hooks
+import { useParams } from 'react-router-dom'
+
+//data
+import { database } from '../../data/database'
+import NotFound from '../../components/Header/Search/NotFound'
 
 const ProductPage:React.FC = () => {
 
@@ -20,17 +24,18 @@ const ProductPage:React.FC = () => {
 
 	<div className='product'>
 		{
-			currentGame.map((item) => (
+			currentGame.length !== 0 ? currentGame.map((item) => (
 				<Product 
 					key={item.id}
 					name={item.name}
 					description={item.description}
+					developer={item.developer}
 					price={item.price}
 					id={item.id}
 					image={item.image}
 					filter={item.filter}
 				/>
-			))
+			)) : <NotFound />
 		}
 	</div>
 
