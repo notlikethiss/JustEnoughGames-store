@@ -1,10 +1,14 @@
 import React from 'react'
 
+import './home.style.scss'
+
 const HomePage:React.FC = () => {
 
   return (
 
-	  <div>HomePage</div>
+	  <div className='home-wrapper'>
+      <h1>Игры по низким ценам</h1>
+    </div>
 
   )
 }
