@@ -10,7 +10,7 @@
 	cursor: pointer;
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 	&:hover {
-		filter: drop-shadow(0 0 20px #ffffff7e);
+		filter: brightness(0.6);
 	}
 }
 
@@ -85,8 +85,7 @@
 	width: 35px;
 	height: 35px;
 	&:hover{
-		filter: drop-shadow(0 0 10px rgb(255, 104, 104));
-		transform: scale(1.2);
+		filter: brightness(0.6);
 	}
 }
 
@@ -123,7 +122,6 @@
 	cursor: pointer;
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 	&:hover{
-		filter: drop-shadow(0 0 10px rgb(224, 224, 224));
-		transform: scale(1.2);
+		filter: brightness(0.6);
 	}
 }

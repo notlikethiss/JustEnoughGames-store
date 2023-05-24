@@ -13,9 +13,11 @@ import { ISearch } from '../../../Types/ISearch'
 const SearchBox:React.FC<ISearch> = ({ searchValue }) => {
 
   const filteredGames = database.filter(item => {
+
 	return (
 		item.name.toLowerCase().includes(searchValue.toLowerCase())
 	)
+	
   })
 
   return (
