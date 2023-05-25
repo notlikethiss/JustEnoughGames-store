@@ -18,7 +18,7 @@ const App:React.FC = () => {
       <Header/>
 
       <Routes>
-        <Route path='/' element={<HomePage/>}/>
+        <Route path='/' element={<StorePage/>}/>
         <Route path='/store' element={<StorePage/>}/>
         <Route path='*' element={<NotFoundPage/>}/>
         <Route path='/products/:id' element={<ProductPage />}/>

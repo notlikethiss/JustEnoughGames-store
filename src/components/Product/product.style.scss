@@ -1,6 +1,12 @@
+.product {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .product-card {
 	border-radius: 20px;
-	width: calc(100% - 100px);
+	width: calc(100% - 400px);
 	background: rgb(12 12 12 / 85%);
 	margin: 150px 0 0 50px;
 	display: flex;
