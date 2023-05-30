@@ -12,11 +12,11 @@ import './product.style.scss'
 
 const Product:React.FC<ICardItem> = (product) => {
 
-	const dispatch = useAppDispatch()
+  const dispatch = useAppDispatch()
 
-	const cartHandler = useCallback(() => {
-	  dispatch(addToCart(product))
-	}, [product, dispatch])
+  const cartHandler = useCallback(() => {
+	dispatch(addToCart(product))
+  }, [product, dispatch])
 
   return (
 

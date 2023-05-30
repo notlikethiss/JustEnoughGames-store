@@ -13,8 +13,8 @@ const Cart:React.FC<ICart> = ({ visibleCart }) => {
 
   const { cartFluid } = useAppSelector((state) => state)
 
-  const fullPrice = cartFluid.reduce((acc:number, item:ICardItem) => {
-		return acc + item.price
+  const fullPrice = cartFluid.reduce((accumulator:number, item:ICardItem) => {
+		return accumulator + item.price
   }, 0)
 
   if(visibleCart) {
