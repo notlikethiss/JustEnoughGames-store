@@ -1,6 +1,6 @@
 .filters {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: repeat(10, max-content);
 	width: calc(max-content + 50px);
 }
 
@@ -31,5 +31,21 @@
 	&:hover {
 		color: #292929;
 		background: #ebebeb;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.filters {
+		grid-template-columns: repeat(4, max-content);
+	}
+
+	.filter {
+		margin: 5px 0 0 5px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.filters {
+		grid-template-columns: repeat(2, max-content);
 	}
 }

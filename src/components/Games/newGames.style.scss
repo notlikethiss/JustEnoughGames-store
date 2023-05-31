@@ -35,6 +35,19 @@
 	.store-grid {
 		grid-template-columns: repeat(3, 1fr);
 	}
+
+	.carditem {
+		width: 230px;
+    	height: 420px;
+
+		.carditem-name {
+			font-size: 20px;
+		}
+
+		.carditem-description {
+			white-space: normal;
+		}
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -45,6 +58,23 @@
 
 @media screen and (max-width: 600px) {
 	.store-grid {
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.carditem {
+		width: 150px;
+    	height: 320px;
+
+		.carditem-name {
+			font-size: 16px;
+		}
+
+		.carditem-description {
+			font-size: 13px;
+		}
+		
+		.carditem-price {
+			font-size: 17px
+		}
 	}
 }

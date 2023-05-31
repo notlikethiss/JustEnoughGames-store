@@ -57,6 +57,9 @@
 
 .menu-button {
 	@include rotateAnimation();
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 0 50px 0 20px;
 	width: 30px;
 	height: 30px;
@@ -123,5 +126,45 @@
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 	&:hover{
 		filter: brightness(0.6);
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.logo-font {
+		font-size: 20px;
+	}
+
+	.favorite {
+		width: 30px;
+		height: 30px;
+	}
+
+	.cart {
+		width: 30px;
+		height: 30px;
+	}
+	
+	.menu-image {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+
+	.logo-font {
+		font-size: 18px;
+	}
+
+	.right-side {
+		display: none;
+	}
+
+	.center {
+		display: none;
+	}
+
+	.new-games-text {
+		font-size: 40px;
 	}
 }
