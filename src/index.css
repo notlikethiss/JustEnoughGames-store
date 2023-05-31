@@ -30,3 +30,7 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	background: rgba(49, 49, 49, 0.37);
 }
+
+* {
+  -webkit-tap-highlight-color: #ebebeb49;
+}

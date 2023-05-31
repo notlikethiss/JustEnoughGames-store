@@ -4,7 +4,7 @@ import './search.style.scss'
 
 import { ISearch } from '../../../Types/ISearch'
 
-const Search:React.FC<ISearch> = ({ setSearchValue, setVisibleSearch, searchValue }) => {
+const Search:React.FC<ISearch> = ({ setSearchValue, setVisibleSearch, searchValue, mobile }) => {
 
   useEffect(() => {
 	if(searchValue) {

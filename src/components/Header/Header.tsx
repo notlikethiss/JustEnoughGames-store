@@ -9,6 +9,7 @@ import Cart from '../Cart/Cart'
 //styles
 import './header.style.scss'
 import HandleSearch from './Search/HandleSearch'
+import MobileSearch from './Search/MobileSearch'
 
 const Header:React.FC = () => {
 
@@ -21,7 +22,12 @@ const Header:React.FC = () => {
 	<header className='header'>
 		<div className='internal-header'>
 
-			<Logo />
+			<Logo
+				setVisibleSearch={setVisibleSearch}
+				setSearchValue={setSearchValue} 
+				visibleSearch={visibleSearch}
+				searchValue={searchValue}
+			/>
 			<Search 
 				setVisibleSearch={setVisibleSearch} 
 				searchValue={searchValue} 

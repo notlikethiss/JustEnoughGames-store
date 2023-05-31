@@ -10,6 +10,7 @@
 	background: #0f0f0f;
 	border-radius: 15px;
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	-webkit-tap-highlight-color: transparent;
 	&:hover {
 		transform: scale(1.008);
 		filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.301));

@@ -69,6 +69,20 @@
 	@include hoverAnimation();
 }
 
+.search-button-mobile {
+	@include hoverAnimation();
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	margin: 0 40px 0 20px;
+}
+
+.search-icon-mobile {
+	width: 25px;
+	height: 25px;
+}
 
 .header-link {
 	text-decoration: none;
@@ -148,16 +162,37 @@
 		width: 20px;
 		height: 20px;
 	}
+
 }
 
 @media screen and (max-width: 620px) {
+
+	.internal-header {
+		border-radius: 15px;
+	}
 
 	.logo-font {
 		font-size: 18px;
 	}
 
-	.right-side {
+	.menu-button {
 		display: none;
+	}
+
+	.search-button-mobile {
+		display: flex;
+	}
+
+	.right-side {
+		display: flex;
+
+		.favorite {
+			display: none;
+		}
+
+		.cart-panel {
+			margin: 0 10px;
+		}
 	}
 
 	.center {
