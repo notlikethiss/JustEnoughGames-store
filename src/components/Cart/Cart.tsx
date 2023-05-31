@@ -44,11 +44,7 @@ const Cart:React.FC<ICart> = ({ visibleCart }) => {
 		</div>
 	  )
 
-  } else {
-
-	return null
-
-  }
+  } else { return null }
 
 }
 
