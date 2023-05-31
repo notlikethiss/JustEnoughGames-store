@@ -4,10 +4,10 @@ import './search.style.scss'
 
 import { ISearch } from '../../../Types/ISearch'
 
-const Search:React.FC<ISearch> = ({ setSearchValue, setVisibleSearch, searchValue, mobile }) => {
+const Search:React.FC<ISearch> = ({ setSearchValue, setVisibleSearch, searchValue, mobileSearch }) => {
 
   useEffect(() => {
-	if(searchValue) {
+	if(searchValue || mobileSearch) {
 		setVisibleSearch(true)
 	} else {
 		setVisibleSearch(false)
@@ -21,7 +21,7 @@ const Search:React.FC<ISearch> = ({ setSearchValue, setVisibleSearch, searchValu
 			type='text'
 			onChange={(event) => setSearchValue(event.currentTarget.value)} 
 			placeholder='Поиск' 
-			className='search'
+			className={!mobileSearch ? 'search' : 'search-mobile'}
 		>
 		</input>
 	</div>

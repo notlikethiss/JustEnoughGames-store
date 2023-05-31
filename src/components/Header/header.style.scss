@@ -195,11 +195,59 @@
 		}
 	}
 
-	.center {
-		display: none;
-	}
-
 	.new-games-text {
 		font-size: 40px;
 	}
+
+	.center {
+		width: 0;
+	}
+
+	.search {
+		display: none;
+	}
+
+	.search-mobile {
+		display: block;
+		position: absolute;
+		top: 50px;
+		left: 20px;
+		width: calc(100% - 50px);
+		background: #181818ec;
+		border: none;
+		z-index: 10;
+		font-size: 15px;
+		height: 35px;
+		border-radius: 10px;
+		outline: none;
+		padding-left: 15px;
+		color: #b6b6b6;
+		transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
+		animation: show .3s;
+	}
+
+	.searchBox {
+		grid-template-columns: repeat(2, 130px);
+		gap: 20px;
+
+		.carditem {
+			width: 130px;
+			height: 300px;
+			
+			.carditem-price {
+				font-size: 14px;
+			}
+
+			.carditem-discount {
+				font-size: 12px;
+			}
+		}
+		transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
+		animation: show .3s;
+	}
+}
+
+@keyframes show {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }

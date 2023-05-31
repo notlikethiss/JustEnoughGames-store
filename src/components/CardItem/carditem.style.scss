@@ -57,6 +57,12 @@
 	height: 400px;
 }
 
+.carditem-desc-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
 .carditem-name {
 	cursor: text;
 	font-size: 26px;
@@ -86,6 +92,7 @@
 .carditem-description {
 	z-index: 10;
 	margin: 0 0 10px 12px;
+	font-size: 14px;
 	width: 270px;
 	height: 10px;
 	color: #b3b3b3;

@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+
 import { ISearch } from '../../../Types/ISearch'
 
-import MobileSearch from '../Search/MobileSearch'
-import Search from '../Search/Search'
-
-const Logo:React.FC<ISearch> = ({ searchValue, visibleSearch, setVisibleSearch, setSearchValue }) => {
+const Logo:React.FC<ISearch> = ({ setMobileSearch, setVisibleSearch, visibleSearch, mobileSearch }) => {
 
   return (
 
@@ -15,14 +13,9 @@ const Logo:React.FC<ISearch> = ({ searchValue, visibleSearch, setVisibleSearch, 
           className='search-icon-mobile' 
           src='https://i.imgur.com/H5vidBM.png' 
           alt='search'
-          onClick={() => (
-            <Search
-              setVisibleSearch={setVisibleSearch} 
-              searchValue={searchValue} 
-              setSearchValue={setSearchValue}
-              mobile={true}
-            />
-          )}
+          onClick={() => {
+            mobileSearch ? setMobileSearch(false) : setMobileSearch(true)
+          }}
         >
         </img>
       </div>

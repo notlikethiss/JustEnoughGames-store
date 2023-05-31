@@ -9,29 +9,34 @@ import Cart from '../Cart/Cart'
 //styles
 import './header.style.scss'
 import HandleSearch from './Search/HandleSearch'
-import MobileSearch from './Search/MobileSearch'
 
 const Header:React.FC = () => {
 
   const [visibleSearch, setVisibleSearch] = useState<boolean>(false)
   const [visibleCart, setVisibleCart] = useState<boolean>(false)
+  const [mobileSearch, setMobileSearch] = useState<boolean>(false)
 
   const [searchValue, setSearchValue] = useState<string>('')
+
+  console.log(mobileSearch)
 
   return (
 	<header className='header'>
 		<div className='internal-header'>
 
 			<Logo
-				setVisibleSearch={setVisibleSearch}
-				setSearchValue={setSearchValue} 
-				visibleSearch={visibleSearch}
-				searchValue={searchValue}
+				setVisibleSearch={setVisibleSearch} 
+				setMobileSearch={setMobileSearch}
+				searchValue={searchValue} 
+				setSearchValue={setSearchValue}
+				mobileSearch={mobileSearch}
 			/>
 			<Search 
 				setVisibleSearch={setVisibleSearch} 
+				setMobileSearch={setMobileSearch}
 				searchValue={searchValue} 
 				setSearchValue={setSearchValue}
+				mobileSearch={mobileSearch}
 			/>	
 			<ActionPanel visibleCart={visibleCart} setVisibleCart={setVisibleCart}/>
 			
@@ -40,15 +45,17 @@ const Header:React.FC = () => {
 		<HandleSearch 
 			setVisibleSearch={setVisibleSearch}
 			setSearchValue={setSearchValue} 
+			setMobileSearch={setMobileSearch}
 			visibleSearch={visibleSearch}
 			searchValue={searchValue}
+			mobileSearch={mobileSearch}
 		/>
 		<Cart 
 			setVisibleCart={setVisibleCart}
 			visibleCart={visibleCart}
 		/>
 
-		{ visibleCart || visibleSearch ? <div className='overlay'/> : null }
+		{ visibleCart || visibleSearch || mobileSearch ? <div className='overlay'/> : null }
 
 	</header>
 	

@@ -33,7 +33,9 @@ const CardItem:React.FC<ICardItem> = (product) => {
 		</Link>
 		<div className='carditem-controls'>
 			<h1 className={`carditem-name ${product.className}`}>{product.name}</h1>
-			<p className='carditem-description'>{product.description}</p>
+			<div className='carditem-desc-container'>
+				<p className='carditem-description'>{product.description}</p>
+			</div>
 			<div className='carditem-prices'>
 				<span className='carditem-price'>{product.price} ₽</span>
 				{ product.discount ? <span className='carditem-discount'>{product.discount} ₽</span> : null}
