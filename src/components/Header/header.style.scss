@@ -245,6 +245,13 @@
 		transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
 		animation: show .3s;
 	}
+
+	.search-notfound {
+		flex-direction: column;
+		.search-notfound-text {
+			font-size: 30px;
+		}
+	}
 }
 
 @keyframes show {
