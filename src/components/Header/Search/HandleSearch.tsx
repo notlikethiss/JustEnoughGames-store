@@ -1,6 +1,9 @@
 import React from 'react'
 
+//components
 import SearchBox from './SearchBox'
+
+//types
 import { ISearch } from '../../../Types/ISearch'
 
 const HandleSearch:React.FC<ISearch> = ({ visibleSearch, setMobileSearch, searchValue, setSearchValue, setVisibleSearch }) => {

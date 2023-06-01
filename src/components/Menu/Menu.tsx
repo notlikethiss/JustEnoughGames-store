@@ -1,5 +1,7 @@
 import React from 'react'
 
+//This component deprecated
+
 //styles
 import './menu.style.scss'
 

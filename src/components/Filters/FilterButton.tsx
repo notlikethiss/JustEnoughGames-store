@@ -12,7 +12,7 @@ const FilterButton:React.FC<IFilterButton> = ({ filterName, filter, setFilter, c
 	} else {
 		return filterName
 	}
-
+	
   }
 
   return (

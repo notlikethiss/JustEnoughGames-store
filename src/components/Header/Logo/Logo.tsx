@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
+
+//components
 import { Link } from 'react-router-dom'
 
+//types
 import { ISearch } from '../../../Types/ISearch'
 
 const Logo:React.FC<ISearch> = ({ setMobileSearch, setVisibleSearch, visibleSearch, mobileSearch }) => {

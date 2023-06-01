@@ -1,5 +1,8 @@
 import React from 'react'
 
+//This component deprecated
+
+//styles
 import './home.style.scss'
 
 const HomePage:React.FC = () => {

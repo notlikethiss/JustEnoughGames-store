@@ -1,6 +1,9 @@
 import React from 'react'
+
+//hooks
 import { useAppSelector } from '../../../hooks'
 
+//types
 import { ICart } from '../../../Types/ICart'
 
 const ActionPanel:React.FC<ICart> = ({ visibleCart, setVisibleCart }) => {

@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
 
+//styles
 import './search.style.scss'
 
+//types
 import { ISearch } from '../../../Types/ISearch'
 
 const Search:React.FC<ISearch> = ({ setSearchValue, setVisibleSearch, searchValue, mobileSearch }) => {
