@@ -18,7 +18,12 @@ const Header:React.FC = () => {
 
   const [searchValue, setSearchValue] = useState<string>('')
 
-  console.log(mobileSearch)
+  const toggleAllPopups = () => {
+	setVisibleCart(false);
+	setMobileSearch(false);
+	setVisibleSearch(false);
+	setSearchValue('');
+  }
 
   return (
 	<header className='header'>
@@ -55,7 +60,7 @@ const Header:React.FC = () => {
 			visibleCart={visibleCart}
 		/>
 
-		{ visibleCart || visibleSearch || mobileSearch ? <div className='overlay'/> : null }
+		{ visibleCart || visibleSearch || mobileSearch ? <div onClick={() => toggleAllPopups() } className='overlay'/> : null }
 
 	</header>
 	
