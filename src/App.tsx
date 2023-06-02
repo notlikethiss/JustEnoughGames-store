@@ -9,11 +9,12 @@ import ProductPage from './pages/ProductPage/ProductPage'
 //components
 import Header from './components/Header/Header'
 import { Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
 
 const App:React.FC = () => {
 
   return (
-    <>
+    <div className='root-wrapper'>
     
       <Header/>
 
@@ -24,7 +25,8 @@ const App:React.FC = () => {
         <Route path='/products/:id' element={<ProductPage />}/>
       </Routes>
     
-    </>
+      <Footer/>
+    </div>
   )
 }
 
