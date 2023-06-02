@@ -1,0 +1,32 @@
+.footer {
+	margin: 50px 0 20px 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.internal-footer {
+	border-radius: 20px;
+	background: #0f0f0f;
+	padding: 0 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: calc(100% - 100px);
+}
+
+.footer-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-image {
+	margin: 0 10px;
+	width: 45px;
+}
+
+.telegram {
+	width: 42px;
+}

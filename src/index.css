@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.root-wrapper {
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: Nunito;
