@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 
 const CardItem:React.FC<ICardItem> = (product) => {
 
-  const privateURL: string = `/products/${product.id}`
+  const privateURL: string = `/products/${product.name}`
 
   const dispatch = useAppDispatch()
 
@@ -30,7 +30,6 @@ const CardItem:React.FC<ICardItem> = (product) => {
 			<div 
 				className='carditem-image' 
 				style={{backgroundImage: product.image ? `url(${product.image})` : `url(${loadingImage})`}}
-				onClick={() => null}
 			>
 			</div>
 		</Link>

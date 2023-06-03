@@ -12,11 +12,11 @@ import NotFound from '../../components/Header/Search/NotFound'
 
 const ProductPage:React.FC = () => {
 
-  const { id } = useParams()
+  const { name } = useParams()
 
   const currentGame = database.filter(item => {
 	return (
-		item.id.toString() === id
+		item.name === name
 	)
   })
 
