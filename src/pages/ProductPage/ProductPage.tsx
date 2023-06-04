@@ -4,16 +4,13 @@ import React from 'react'
 import Product from '../../components/Product/Product'
 
 //hooks
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 //data
 import { database } from '../../data/database'
-import NotFound from '../../components/Header/Search/NotFound'
 import NotFoundPage from '../NotFound/NotFoundPage'
 
 const ProductPage:React.FC = () => {
-
-  const nav = useNavigate()
 
   const { name } = useParams()
 
