@@ -5,7 +5,7 @@ import { IFilterButton } from '../../Types/IFilterButton'
 
 const FilterButton:React.FC<IFilterButton> = ({ filterName, filter, setFilter, clean }) => {
 
-  const checkCleanFilters = (filterName:string) => {
+  const checkCleanFilters = (filterName: string) => {
 
 	if(filterName === 'Очистить фильтры'){
 		return ''

@@ -4,7 +4,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Dead Space",
 		description: "Survival horror, Шутер",
-		image: "https://lh3.googleusercontent.com/dWukhvNGdsj1iVYL-tseDtJ3e11Lrh1zFJpFxIyw70rFco35Oc7OlMxWOj62Q1l3qSlKFkg_7CHTOv49PmhpsiJScEoLufScqdzPdyRnV0ur6McI4sv8vzN0gQiZT19BmI0E0jACgE_ERGcSVgBk8lXaN8y87QCGOf8eEgTrEyNurpVd4vtl9i14fOHIcq5Iah9lt2m6AYm1Iw-qy6zKVZBmMMN8DRa2RtGTvmU2Rl0POZt_xMtHCyOSh3FecEpm12N3Mu_ohQdj55OmYbuLRoMLQ6kj4h2r6pbI6CpR3rg7pdkoA4l7cQZQMBuqpUaz4Y2WC4vZUaG5wZZRR9O5pin3PJF5FOx9kMMiBNA1IKsn4SvIsC9N7xdMV3zYRqdEmbBPT92FTGd5Yh-bqfcfA4trd3FCcH8owyZ77ArYIdxpVHcHFQLN_kg32vtoqk2-wzibRsglWTwwOorEHXJHBkzP2maKCW3beG5kLM-UGPubntjJev7An20YK5qJlblUOdnnLKkg6z6zin9Jnwv71GRuvLEE1nVJbEBdcRNtUJlUUoNR26ZiTluqeJid4pXsP6-UrysaQF9SdNMDGsRZ5rKeHDmUz_cJ6xSRCH1jI2YK_45CbGOMrQ518h5444SiycSbArkncdzaFMz2VpNJAKCO3YBNyU_LkjsWCGKIJZoy-9ALziQLL3BDqZvzUCiH1t9qmSYWFT7sJIPdYCNnA2hIxEmnQwg9xCYlsGCym1kiro8IrzAU_IzxUqRGE9XfObQq0uL4KRTEOm45U3TesyKQtBgxc5j49dcyo1R9JUaugzcWYUyLX3nZyjnoUTiHYGSb73nu5OHTwvLJI6_NuSFsFxWFCqHFamB3l_g1OZIGGSVHMTNjNioht6icGV9FVxm4Tt2CIOAAoLZFXy31EJrMyK-j0-CBtU8ZNj1OF4n7enql8r--GI99nrm-0DcIXxMI4HHWQe5ldZhXdllTxxjJDuwCqLFLegc-dia_GmbYQW2Nlw=w400-h565-s-no?",
+		image: "https://www.igroshop.com/images/detailed/12/Dead_Space_2023_box_art.jpg",
 		filter: ['Horror', 'Shooter'],
 		developer: "EA Motive",
 		price: 2790,
@@ -14,7 +14,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Atomic Heart",
 		description: "Экшн, Шутер, Постапокалипсис",
-		image: "https://lh3.googleusercontent.com/9gzOH65dCCjViyD8hqqaV5om9YYXk_Bg3PUvpdtjFmmrL6BpiOZHV6NuydmLhRyJ0n3M7jB8RQiWJ4BrzPZw9LP1v6GS_SVNKK33Zqw3wfPRxJ7TQofsl8U_ndy7cgaXIb06KOzORI9Hogj237aZZDOYIAl9lh1KN8vlozNjV7fKwWY3SBxIPczv5IKXD9MsYVxY6ImBX8sQkMn0jyQpyGyL6ZhzV8Yd2nHh5t5rXOZK8tJyfZ1XWu4O2yUYWIdYH16ZsnobPPZdbCYbXt7TVLNJbRJCDuxbuYE9sFsBQx_-Is-51lhAfH2cxNMHF1W0JXwDl47pj0DOaeIg7pk9bbdfleessboku1r5XQ8csJB1hG2bVKeTrS7vtPSWkdb-bT10Ik6oAQy_5E0FQMkA0RD3DcnCkfVtwC-s691xdhdqjZek7kK97clQzypB8QdGAiuGbP5uwjcoMytfJaU0-WBf-sop30NcOEllqnSPjnT5IFpq_vh7OwlYh3y8Hw-CfvFEo-HC-ordXqpaotkgqdtzwYnZ442CfAx1Pm4d3p5u3cMgOowHuwOXT2dB-G1CY3nF6DM3OQFypu7dk_Zor6fd7_nE53LkXoOodG6rlqD6feu5tgLg_7AtHCym0D-MqHjeYg6OY105TMDtH8Y81TQLLjDshtGqSy1tGL8xX0Nq6rm9BWASTNAL2s1OsdMuOUuaq0eGUbBmkz1PD1BmQvtnv4tVwvL3a2EYOQTCfwWnGmBjTdd8YWousUcaf0uy3XkYl-mP-viFfrLzrdmuc1xRJaI7iT6YxfQMwNNYQ0oKOcqfB_4hvm2WOvePvzqLwFURsmuHlFqM58h5fzmYnV3h89a26C3qI5teRt41hxn-934nKjQEGBF6sCaJjMa_an1i4Kyabw1_679rbXstf8ICqYi2R-I7Ke2zW5ITuI167CqRnXIpC-Y39uo2qlScxgxXsQbpDdlm-4X6ZAYnUXa8kkdeQQ6ul7hFZJFVzlYP6OM4mA=w499-h749-s-no?",
+		image: "https://upload.wikimedia.org/wikipedia/ru/0/01/Atomic_Heart_Cover_Art.jpg",
 		filter: ['Action', 'Shooter', 'Adventure'],
 		developer: "Mundfish",
 		price: 2499,
@@ -23,7 +23,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Resident Evil 4",
 		description: "Survival horror, Шутер",
-		image: "https://lh3.googleusercontent.com/-Uv95Nvukqvpu_NSYFQTkfACdmWxMVcktv0NkpjXsVvFVH8y64YQNEdls3gG_VRlcbLFSOxgI1TrRNXwUBCgn1xa_ne3ulMPoDO7LXPAsuNEizIvRmP9SnQUhi1782uZv5wDe2GpiV3vA2UF8PZ7k6Ecz2exHoCK32IKFXbgRFdkrBqk0EJJlE0XkmyQpRdzDWQWYngs2ckhNXuS5tKBk1TtxzhfcueNTCFG36_K7yWhkVBsptNQmnUy07Qwf5cGFwbyKA2DAR_VWUAN7Xie9O3I20FUKEby8YPIaCg1uqelez9lpVRAVXFDJxjwutJn7yVqmggDbMRRpP3Id1VZsOQwbKKoIb1diPj6hW773EnhIhnP67RUnwbY2bH2i2_r4FuHuX_8AKsBX0JyHWRlwnCGVMTP_CFjeUFimjZOjtgmIXgVPP18ZhDdYHnP3xBT9sHX7I59GHjfy6cteNFWCL_KSzGGrw5CcroqW52FBDmC3ZTZhoF7cOKvWAd482nrd2cbpzKZOL4tMNKB0ceQ02nY4DQQiGEpJVBIM56YKA00bV6AuL7uOooEvYXu0z5hWoMOQeq5Dp8C7s0uuJp-KOZ-ha5sFpCcwjDsHFtI0owY5BSxSdFmdQ4vDgTeBxHlBPeUhqDw2fdAA0ipMkgpIcsoCWVC8jv60BCZ3S3ofR_L34-4r26Laf127g9jHqrMyRZDn-CgJxRX3KBVAA83uNufc2CpDnvxyc32Be7Na1aKFai4yfgZGwvtqMQMbqE7PzMmliES7yQINWfxwKqdDMEJ06z-zF6eE0bQu1oShUzntzIBo8JR0fZBz6cQDrPIRCRLLqIta4_gcfA12xEUd6V3m0yatVMtkjcBHn8411RlHmg6UubSV3rRNBBu-RPO8jMNnGWNAIzOHkXAE-T2BcYKvFT30KlzN_zXjorIjCNzCFZI7z-G21m72F8hG0fKyH_dx-kSH7M6UK5RetbBSxdr4E4Ly-w2vGSIEOifPwXT9PsFSw=w499-h749-s-no?",
+		image: "https://upload.wikimedia.org/wikipedia/ru/6/62/Resident_Evil_4_remake.png",
 		filter: ['Horror', 'Shooter'],
 		developer: "Capcom",
 		price: 4899,
@@ -32,7 +32,7 @@ export const database:ICardItem[] = [
 	{
 		name: "One Piece Odyssey",
 		description: "Приключение, Экшн",
-		image: "https://lh3.googleusercontent.com/OfQRZZRA-P0sXQonePh3Q3PyELRHhfYJPh8Key3VZ3-Kit9pAxgr_ZM5rgMTPE0FdBgfqxmSRCgLtZpTsrG2PFH7B0lfl45vpuUiunHaWgEEb55rX8elMoT6AYarMBHRhxXIn9VejW0moqYP9XvT9e7x_IRlxwkpZhr4yr61882eB6mfsgZGBWmk5XdQlWj5jaCbSpp5UKn679gRcyt3dG5tREnryeC9EYGQHWpkA4SG533vsq4OtJzgo3dJjzv3ZPdP0o0FkGeIns3ZLN2hcfMHJbOwYgkXc3pPXSBj9RxbdwMJ6H-K-nCxRRBZ4c4APf1pWSKKQ9-FealFzlgA-7Fr8eqfNCCjwLI4zVs_s99coY_qz6mgyngLdUoeZuHnxyoTPcvrYUdf-Py7ifvPNkAsb-6aZo6R7woWrhww_0DOH_I7ozEddIsDuyNDHztV1YP8dI3SZIHxa8MgxFV76vzlWPkfOHSpwuHv87Pzx1Wx32ff-eoz01WbdSve8tYt0taUMYMwRbHXwCgVq6MoQ8J_c1LZatLd0auuv7Z8SmP_PxVUfVdfyMS5lPwUcwCz3vHb2mL-Xs_Cn43F-nGLhDNuEeGOfAgBuGQSIxE_vpB6I58dsxrE1mATkdD9mp-PAbXT6tV7U-zCTBiv8O5whtN0wnQYOWiCEjDDwEcBTBsickDUDXbE9rj-OqgMwJ2HE_-zvgXcRIzsSCphltKPoTL5vAI5AAjHNmq_jyViGG2el6QrDMCH-axxvPNvqpsZIKROnFR2QQUwXMdQSRYtvqp6CVPU77lMeI6M45ecd_UCq_lBbZYeqyc8AGp_wLgvjc7pH9rXSFGdXKUeODg820fEDOiP-SoBjbDQWKAlNhywRwCzZklSsRcxG-05Kk0A_fvBle8wNvbbgXaRnTd3ORGljaDGhgu_5xTPOY_x45M89Ue4mTWWB1Ot1KQV8xNml0CRG1pMMaRXz-sfCDC7rPrGvIvHgiD7GhYsJsMrzjBIn0HNkQ=w499-h749-s-no?",
+		image: "https://upload.wikimedia.org/wikipedia/ru/f/f9/One_Piece_Odyssey_cover.jpeg",
 		filter: ['Adventure', 'Action'],
 		developer: "ILCA",
 		price: 5190,
@@ -41,7 +41,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Hogwarts Legacy",
 		description: "Открытый мир, Приключение",
-		image: "https://lh3.googleusercontent.com/gRZfHOXJy-E8NudqLbbfsBkh1_YKnvgBspQSobvgqn0sjTiW3rll41rE0o-C7UAtue6ZxBYYCBWV_vfuvAvVxuxW8GRxGgADnUe4_FUTt5GIhJdvt8hBlM5QB5Rv_mjAOGBt8BwZAHCAYvisERMsLxlcRQgBDYr3NBw9iHSXsBLq9ukrRTv0PPRIYjxFSiPMD5vzaQJ5vRpGTmHUYtEF5c7yC8kP_s_7CNmqapAgTQC1ead7XJP7EATvhD0Li-Y1LE17wQgHz0QLf3P7l26BgJS8DnKJfhhkMTPabC484di1-cTXJPcqArbBC724vG7UqTcFvTg41_wa5rukblOfSz5QxNeEPFzhazC8S2XZOkq_olf8l7ccT8A6Dm4y0wwRDNn2dFDdgLm4qW-Z4E2B2v0gTJg9fTpO64rnZ9VuN-HV-3O31x6A9djYfVM4dyQvIKWl82CZT03R9QwWL31nmjzJrhIBccIgbLBtARp_nEBsDsg8u5VFWkBYUy1XqjrG-N_ktxqGr1Ub4AIWaDutdvzAXEHV1up-aXzrpR7vv4YKPcGGjorovbyXvkvgLvGXP11C9MkPfDswG0uKjwtp2pmDqPfOgBSwD6TUvVFJuEktgAG_SbZ6EQbWmXz8GfIgqN4rV6bf48gOU9gbYr3ZkYYl-FK8PVQpOO2odl8C2WwsS6xhuat66baj8IHZewj6QJjA57tf-Qlteo-fpC1gUmFpRRg3zf17Drtd0Vuuj3L0Aju5YpZi2Aw7wOIaYqkT6zOIYCtzNovjMmmwipKG6S9f-Qo2AIVQHPCEWL7aQRClT_nls86ub1xnaZJEdQvcswKtBK01T6hcijFJ59WMIry7Kmo8s8oMwmRKlkedQEtQ62wyLN72MNGT89WgFbQWSkp441FQV-iVFqHGODjRfoTHH0Vvzuipm_LbJ-WY7ePF8Xwr47JmMcsPM26EefyBbndL6b0zJFVvI-aCtZHLHRIVJ4Y-8KWa7vgX89C_fVpixMH3gg=w499-h749-s-no?",
+		image: "https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/Ah7Ar9MU0r1BBlzAUflmhyQP.png",
 		filter: ['OpenWorld', 'Adventure'],
 		developer: "Avalanche Software",
 		price: 2799,
@@ -51,7 +51,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Diablo IV",
 		description: "Action/RPG, Rougelike",
-		image: "https://lh3.googleusercontent.com/C5OOk9zg1HVtFukuzdIPRDf8jtRg_LyF2UcDGEDXbaKcc1hFcHYtNd5rXaVDE90Y1Lzb5ZeM8EgoQhX5AVUkcPS6rzWJVIPxyRjeTNknqPCaqjaz8vQOi-xsW3-AaEkdbQScXPALGVqHOeTaaIUVn7-pVTNAEIb79i00CKA3FyedI5NRIQGFyHvJK63ffx4PUoF1zkVweWek4_CFnE72tlTzbQ1bxdp8j6urkajH92EIGnhKqCacxq_AvbsA6hXd4M8tyQRn-4x-ULYvQqM1bOM4uZJs8JceRt0Rd-ECNfENXhWOQWTIs8lbPaBWtzQ5ye3lKY0geqfwcoQvrO6vPLLqj3tF-xPUWWGhE_ed1F8lvol0AEprqSJCChI53tDGqRa2e59LFgW3RTD8rIrajUCiV7sR1pANSbyhxXXlYLFrfDm-oymgE5iPVXgLJGmo0SthLZqMtUekL__Kr9Q-ApGiiIEfZT7sG9UO4FQkW7b98Zox5KfsN0iCl7glweCHEOtzGvKRAiJOrqib037klFvzy-RHQB-yjizd_zhv-TgOK_J5jdFsLJrWZnKjeMczzUx3jATBExoSTNLKhXTV7-7K2jzgww7GKcvf83Dujo-mxEEnaCa4qyZY5LVg3ZqOlfdkj_FkYVCGVmyjdaoIf5Z8CL9QwBxK42W_XDZaISFjk2oxXvXCVmoDiohZpHpxzWLhmk0IK7xV8kzJEACrss8xQdGEFoVO_a-bhPICrRWmQ7Wq4fwmx_RxPY5rc6u2H_LsH5n7R023SDTpfglbw6QB6bFyrYVlVXsttdm4x1uE7Hj8jjLhxPOXGRXNNWnsokJp9PtN11nqeNSf63LbiEbddUNoVr-siU84QuL-Qf8VOLfwo_9qfleD__CoRWZ7Clx5aC6LKqnDisszi6sM8dUBb599EdSkTz8uLOJFs7UuNVnIInGqGNxmX08aW3WjpyYd61roTHuQ1SWQi7j9oo0kAHczvalzJj9DKFLgVazW1anbCw=w562-h749-s-no?",
+		image: "https://upload.wikimedia.org/wikipedia/ru/0/08/Diablo_IV_Logo.png",
 		filter: ['Action', 'RPG', 'Rougelike'],
 		developer: "Blizzard Entertainment",
 		price: 3999,
@@ -60,7 +60,7 @@ export const database:ICardItem[] = [
 	{
 		name: "The Outlast Trials",
 		description: "Хоррор, Экшн",
-		image: "https://lh3.googleusercontent.com/pw3Jmph-LTFZqyESviAj7e4Uiez1PLODHxgMY4w1-Kq3lTG7Zw3jHhP_xawV0fVAvvdd1ICHP_WZNBXYfBaCU2zgO0mm_Ph_K8IJphfi46ez8ntcqUos3MrJXmrN42rZjEkTgknxmryY0XcRWkpNv3CDa_Hfxx-IOkSayxHx5L773lOfeXLydH3JZED0s3TbTGy-mbxqtWXo9DMnA2wTI8LryBDlJWlqF80dx9xLIjUXTbFWcTGDAbISeKdZ_4zS2yBkHtkfVp5WDWYgY3Zl-42aXWu-A6j16t1FWzOzY7bUKSbHgyFfW5nXKC2GTNh8RDKmU4j8ryoQ1PsAxVp9OkHJNYEbNFg2Sq8GRe-gzl5Ufai4oAvxvTk4_KnE_OIhdg3PKNlTT29FdDYm75mMrU9uppwMJcIJpciORkcy8YDLCYO8RUwhstf-GuQQDZJykRRyNkXWIiyW2AUGEVU89bUsaR0b6CiZYGEYdA00UaiLPeo4ctVz2dlc70UuiH1J1lK9ZPwljM9f_OnB_Qve4mzHcVyZ9j04J6ZR54XwkI0iYsDwOolv9HeQ7pH_9hIvd8Uj19NYqYUaEPr2i3DozYm4c7WbCrmEy4Pbnp0W2BysFTklr4Yhe1TqvdNv6ONlQDogTNK1F34udRq2_-pXp9ivW7JtQZqqJnOk5gD5mF8ikBtMdUMOO0mAAgi5KRr4RwfBene1eJN5xWec4zZ0OB4WUSwMJCUOPlS46m-1j7fVbQwAxASGtEW1Hvbrn7-b3lLOCFHtuWqbI6T5Vix2-JDZ3uw3yOXCq76amnCNaNmFrcotcISXCdzh54otPz7lm4VZ4Gz91QVNMfl-bqTm_HdPFCsitmDZx3oiX6rhcs7tqLBfyaicHbx94AlvnsWy5akir2mca2DcQLrFW9G7P7NjeR8fuO-hdll1bKuOO7Q1JqeU-OpxsLwOAxECb_rDvc3HGVGg5VTZy30a23x_5ONbF0lYneG8O6F6dL5uFE-_XjboJQ=w562-h749-s-no?",
+		image: "https://cdn1.epicgames.com/6504cc61472e498796e0b4963a201438/offer/EGS_TheOutlastTrials_RedBarrels_S2-1200x1600-c70676de7925195513fa7bc4bc2f1d9b.jpg",
 		filter: ['Horror', 'Action'],
 		developer: "Red Barrels",
 		price: 1999,
@@ -69,7 +69,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Dust & Neon",
 		description: "Шутер, Приключение",
-		image: "https://lh3.googleusercontent.com/ZN792baD17uyHexI6N4tiA_OIDo6ThJLSeas0VQKmv9AIQ_In3DAATCKLgttftiQLZuBDoGglFtjtBXpQZIMtKfZcvAB_stjUu5h0rQge53jAhYpS6vAhmlRn-MjMZzlQgcFrBTOMGIYqwp90M045NSvNSpybe3nBmEmgCuVeDLgy4VA-IaUmsZdEqxxilthD8oZ9ntV6K56l0leQCoMi-ySUUndvxDgY43CNK5Yk88d4omhO87cygIsK1CnBJWqnVqouDNSPB4ZFgB3xo_p3tSh5CoDo07m9qfKmm4yI9aDpy_7mkG-WYvkb28xCbiCRXjJApQBacUT82xDhL9ldEv_nkw9dsBr7CcvQ7_I6mjGcf5oHiKwZXjqEYORa1Aylyy8jEofNo40WE_KKHG_l18wjwIfbiL8Jw7tz8__pM8sfcEzZzrUXTDWAkzfTZzz_8SawIOEUH6xVfVe-Jxz8IQ34pUGy7gs-F1seGjUG4y7cWKJgOuShlPMuIJgAeORI3fuNBByhHpsIwnV9BXN8J_JHrW_4sWc9Wu76WwL_hpSJi9CUlfuaDWpfkoASIOCu6NrMO1hJ9QXD-akIjuyuXxgZ6KcVPx8i3YEf0kg1PQphzCzT1tmf_sV520vV-MjNC_mXsSgswMlHPdacHlCBAeZSxR7jMKi16J5iRcRwt5A3joLeI8wQrNy5lVDRF6jbdw5qI5RiD8cK7F3hdsD2_2ps-sRH0h6EzFwNkgriqIP8IpJUnjYJBocl_Un3rOV7Hku4RiqJ9gwZsDI33Qfj5kEi5GIg_xSr1n5XW58iyCpGu0C0Fh1WlEcttGDOsVla__vRN0LkPv-yQOsTKjF-pvsyUahk6__U0k-kd3AdauTwSLGzNghB01f1-KRa-Z0NJW-wvCIPviQH_P-eenLkOC1WFwEQfMLiZHm4P-ga4LQreVGeAxiDMfp8Bhbe9OBFe7UbSycpkhzPl1gpSzLdPqzaiIuT-TJUux_Z29NhVgJw2V2Dg=w562-h749-s-no?",
+		image: "https://cdn1.epicgames.com/spt-assets/fa279ceff641422e88fef6207db56ada/dust-and-neon-3b7wd.jpg",
 		filter: ['Adventure', 'Shooter'],
 		developer: "David Marquardt Studios",
 		price: 1299,
@@ -79,7 +79,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Redemption Reapers",
 		description: "Приключение, Экшн",
-		image: "https://lh3.googleusercontent.com/NuO06cYyPSzzfzNWS4mcvoPEgCeGqABkWSxA_9jxCgfJdp04y_N9Oz3-kHOIrguvFo7uQVnkaxIWkQ-b5nNwjWWpUoCxcya-RWeBp3Gwrc1-54A0b60xFaPoVzZs1GQSAN6D-k7L7gxXx1C7NJAkAe5DTLGprMn7x6OYMTxhmJ1y70LHi36h7nxrOMfbCEbbfiicV9C1X4VKvAxPEDd05zk5x0-XilePyQufpFmuPXNcZAF-pBRRZ7GMo7f2i0l6pN6aPKg-DYvY2N7OTz-AFZBzYud8tHC1o-Uua0yannnOUkyBs5uix-boVQlkq5Q1KL4yABwzcH52EYSYqRDeVcBdOim_t-ym5ZRg1y8feeYurvg1izZotncxmwjGKJAeWxret-9HKAnwkazty-nV-SNKOIVOdEAARTF37KnVNW4c1yOaQdRO62xcj_kOCGzzQ8YQOTUK9EL7k61wbgea0-8rEf2RapArU-giHn-pJjbdSW9NcMWr9n2aLZG2s_OZWNP9UvnScoaCektfesNI7EgpiDPODELazmpVDeV_EUu9c9OLcSrX_JcloO_8cwKmLSkRtn6lUey2L6A-fx9FeaaTO2n-H72i2l_Xr5-GE6yYD94-agzp_UPT-jPMEZPdoA-3lpDW3Ui3f12jfv2zQ9dFbH6wd_cUKaUnPCIEZnYmTaZLrkgjFFRoY-mKSmo-i4s1dU0F7z1GPHx4PKX-Bcw1J1cLkm2aVQd9iM5gO7Xn2TPSJ1YwBGyi03vhOe5qOfw105lIfr3Tt4e3PWj4EGEPz-JlL6d_hvBnE-BRQ-Oy4eFvSM1NkQpN7JDOV4lafZalhk5MjiR5PwXKi0quVuzRc3qRJxPGoLn912nOmFULyak8n8ED-MeMACrq7JYW0NITz4wqMljJIjYFYEHhCVBg8rhwXbpvvCi66D4I5bAsa2Fb5B0LpdCO34BwnzuAPPgwEm8Tki4TkYXu2r9X01UVRsXz8PlcrGWTqR1nI_-bTVLDJA=w1332-h749-s-no?",
+		image: "https://rreapers.com/images/top-background.png",
 		filter: ['Adventure', 'Action'],
 		developer: "Adglobe",
 		price: 2799,
@@ -88,7 +88,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Slime Rancher 2",
 		description: "Открытый мир, Приключение",
-		image: "https://lh3.googleusercontent.com/kqz4aD2yg-uuOlRRbmLbgGlU4Sg6R3isD7YfBVjh84NUh-heC-xitI4h6uERueWnUuOrL7OciqbnFZ1yAYGxdUiVz8mHX2Oqu2aZCErbtcJhZTPprertwyJO4V7FVIKl0AhZ7pZ2pAVA2c5p3DOlMMcJA5fVgEgl4UZjatpVdIvqCNVwFoQSKFJ2x6K6itUIl8Gfpk_miQn-N1-_N2wZ5gJhdPkzzHlVaa1spdDNomvHJ1YIvPRaRyjeQib8MjtaijXsKbbnPGNU-eRjDTqqsR3FUX1KHFDl8crL9hxXX23LY6L33ERMRLE8id_9IBGGMm77_hsvm0vxW-Guz4-nrPWS-h5NQXG4uxbrCBJMcias0zpNAGDRqeveQV4N4FNxMHiGXvqag0POD5qrjDb-6JwI9uzYQvpzjaxO9PKAWAYOMs0ZrI7B2djjmasJJj98TtXt1ijPBfAMz4oXRZ-e_DTKfZmk5zQhhkft22x8Zgpkj2ody3msFe48bx6wXVOQBTMxuypW4VyV3dWbrokcXN-Z10LPgEs8wmEBfhfgFMZ99OcyEp8IpaPCxIMvLmVH_Mmges8CF8QDEXvVQwEC6gLRorVKOp658sdMO1klqGvgcCVtRMl_lEDS5_QYdn2ryjnDV9gWkuZvR_14SdhogIevKhzldH2ld74VOUB3BMIfjiPPUGgxzSKftE9IGHjp8eTCbfELncATgRNiHURDAa-qfy6Sb8yVVmIc5Sq4CR4aOSR-alOanDkOEYJh9h2sISfUMiSqVxPm_dkz-flxpAWWugMQZgh4VG93RUzQHBzuNhEhP7570-a94ckJkOq8xpen0Z2FZRopFeRVFIbkCFyvkSFSCHQkH4-qHqwvHoQC8FVEjaZdbIZogTFimVA3uru6UjQvptf5S7_g7kGOYaJuE6Pim69_mEV-OdQ7aVjIvribXVVdlZBzo6n_L4n4FP-hbWolas-39mJpPdGQh6BZrDnlLhJfXElHfdx9BOghTHB3sw=w749-h749-s-no?",
+		image: "https://assets-prd.ignimgs.com/2022/09/22/slime-rancher-2-button-02-1663890048548.jpg",
 		filter: ['OpenWorld', 'Adventure'],
 		developer: "Monomi Park",
 		price: 799,
@@ -98,7 +98,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Dark Souls Remastered",
 		description: "Action RPG, Souls-like",
-		image: "https://lh3.googleusercontent.com/tpXeShvZ1kHE9E_Vdupk4mD1rquQA6M3FaY3os1K8gew-KRAP3iZ88bYVQejrD48W3-ivEH-j5GFpur7PHSZbjv1j3EhEDi6UxE4Tognewg2NmXZpsACr_O_Kygdgg676kxFetTcHpJRjozB3MWH5wT9f3zTRfbJqkDdGnf45hlW7YQKpA4wiseGiMmO8RuZLf0MfJegL7XlHtTas9pCV5u9V0oEYRg_R3ieE9POQKYuTUjGrLeYbzz44ZpezVkwNLuMQK1FNS0RScRdpTzOfPvHCIS0orzLqzT1chcctpvvTGHlXoyp-QJSSrxPKCRgfGZlcwvLY8cWXZrE0DLPpX6hs-cWbQs8WL3UpdgDGh_4PHt3gKTE-vUfVq_DbKWTwGK3mRXx5qPnGu-AUWMciJY8zUUNoyN-oF3bFUuLVSTVDPAdzRg6Xr841j_LjUaJPBw6pSKDXcl3fVJurr8jU5oQ5WnIwyHYuLdJ3RdE7FxoPovU_S3-GQF6yP_9u4CaEewuQ2IT4iTAiFy2bfdBiU4NQW-U6JpBxxoh34Cu1ijM8MosJH-ENs3SwXyPD9TLpT08m6WteMh7MJpf5pFQD2jpSha41lMtlCj4hnop8ahcL9DYqs41nDV71-_MWvIyvlOfsjmnZRfQSxkL3ffEx9oCaVq_IO9eOdFbCevBzDDinDAPcOtB3knnUcFxI6U-pO-9lv1phGesWg0YtD37jgQHAxQzoOc3CuTdeuReO7qxoecjoxI2swTsR5V6GeUh0Rbuo-II_II8D96hb8tjgr6PJoftc_FYXIFb-jyiDuOIYBjccAISu3nbD5UYWToXswm9qmu9Zws8kMYlnkx5Fl07pRQW9aPOrRIPJjDi18PolBxr3WLBmireEz8c7MfMjeqRDF3myROwu0Op7kOGXmJzYGy-TQID5yvRZBKWrnzcXRFDc9aoGMkVQPUTCs9hxvTrSZWRHoNJx8vKIt7X6-ZqzDGsS40N2FwUBF2HKVNyPOW1Hw=w433-h554-s-no?",
+		image: "https://media.discordapp.net/attachments/888505536457367552/1102015542631596114/Dark_Souls_Remastered.webp?width=433&height=554",
 		filter: ['Action', 'RPG'],
 		developer: "Fromsoftware",
 		price: 1599,
@@ -107,7 +107,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Dark Souls II : Scholar of The First Sin",
 		description: "Action RPG, Souls-like",
-		image: "https://lh3.googleusercontent.com/V34nc1GpN9tYjyAtRl2sDa8cwuMzXmRFOcrUaphP3dj1bZArZjxkDVOlw4-9g-70s5r9mO3W6a477rA4cGm-uP8WNLi6cQMXXl-CikyDq7eKs7zSUJ5H6UoGItfQEq1vYCIILxB9jbxoWiQou24-a-PxaAH2tUMNIsLam_W2ujlGQMcR87bu3IsW2X5UWGd8EDk_JFHAX1nan-rzz4l0Z_zQtFqnZGOsM3azuNX_G4rCd4HT6V0Wj-acZuNDhxpk2vKyXIpWtwpyF79k-E6dSJ5EmGMzvew_lPZsCcCZKAHIVqg8gdVmmQb-46NugFhTseZ5Zt94Is1_IsTj0C8SLpLdFdDKEfzpsu8JR7roXZ17mpUrE2nGMvko_Oo79XI4xqCDj0wNZfuKCQeqneBBxS6PsxxYiS5974KG5ujvKwqbRiKmkv9CdNYu8cpfCkGrymZbA3LGAwdCW2eY7upRtEZ4xk3dTT_WmN66P6juPq1YyzFJTGWI-Je6Lr9dB4LT26TJMxPok66uOP1615Anq40ZR7bDSZv95GiQKQltqxtIo3YcP3W6X05UU04redWUS4hHywe5SjWme91iYvVVUdu7HNZvzfDXTnkpDa9P5quIoqCjYbd9tp5gisKz8C23WhdJa4adW13dBOKlyeSAaLzp-9c0TrJm6iG25vsLrXWQqX6fRPDGMNeEGJRNgqiMcGdoYUKOOGJJwaODaNCixUUunpYiYxhJLVwRiwh4oFET2TJCackECQSJWwKo4iM3HLxvhl48DNys-Mr3T0KzZoWIozFkw-E_Lfll32L6NIzD1a3IGvXoOf_Mw4OqoUVGRcykNYnM3FO-Yc78JhWkehgp1jp1913oAL21egIUdSjKprLXJZwfbi9fpUgO6VLM12jq2jDeYCuD-6ilruENyOPCKF8CDmMPc30qeFNVMxFI9YfHuXbS9xvmR29QTdBbP_IhFOrn1jYsZ1uRPH_3pKxNOutpXzX-yi0ewW_G6zTOwy1y4Q=w499-h749-s-no?",
+		image: "https://m.media-amazon.com/images/M/MV5BYTI2MjE0YjQtYTc0Ni00Yzc4LTlkZWEtODMxZjA2ZWMyYjViXkEyXkFqcGdeQXVyMTI0MzA4NTgw._V1_.jpg",
 		filter: ['Action', 'RPG'],
 		developer: "Fromsoftware",
 		price: 2499,
@@ -116,7 +116,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Dark Souls III Deluxe Edition",
 		description: "Action RPG, Souls-like",
-		image: "https://lh3.googleusercontent.com/fAjP8O3cE23QKKUCAXomvLshbyeURHTzBvSkTMHpxY7B5_lkzMDdpRW1K6_YFa_ej2kwlAcKoBOAWR9Onz3KBwYyy0QdKMpasqnjGPax01lzvPUcUbZr7jgUvVzocTfxCsj1FjKPuHYhee-mB7nQjBEukU-U3n0Daj1M9PML5hjZD8e6nt5mErbi_5d8iKCl5wN8SXrIlw0zRd3ivrEDujtrLTUSGTtaphImCT5yaaWMkj4rerRhddnKzIY5DFI7pO1_onnhXI-1Ux6gAlKtE4h9csGNagSg82eD_skJSyX76aPZ4finuQksqUp16W6-x8rXCz25b3KjnwcYi_sane-Qe25_DjUCjYE1RtUPcIj0GO0TsZ77itzfqMmm2WdaINsAulabBukEwwbvfagjXGkmLdsyPT4SAR5-yGRbJ_zE6DGV1xyZK6kXZFqFp1VdPr_h6oDdA1sEla08hY1LgKuNbAebvKxypV3iubhBtIZqHr9I2MkEik2HFMjdRw_nP5Lx_W1MeAk3BstPcA3iNeGyuZvMih54gXA8PwBZBpIGyBFTOJ0gX8mVFSlv8Y4jLPVSfJvuJN2qD-chpefQdFz10L-KI6xAXN4MA7vitlfOMTK51V2VCa1qmNqaTvfM0Y6p9H7qh9PlG8dabTTYna_vIxS7nrOsyJA7OTQqm86sJiCXWE6cc6nys_CeIAe5-9fkvHQhUjhG-L6RMLQ3HVWAvTxh6vHU3kQNyFSBj4ywKi8XRfbNvqgm-TvKgnlkmAhMrXzfV8AzXnJC1hGuCdbi6LGwsI2s7S3hfDPD0Jc0CJCK73yxjIkkYTfni4PRmD_1fyOx-LGSdX2nUECeQmWlpoOZySeASbhpr1A0IRuMQTOAYW1FvSVcavGsSaoI30da5kNNj686WOXASAHmutEtAw_Tg6boOyFActiYyyzr2nclfqnWh-Pokj0gMSs4TDsl-2vUDJkn0SSNcDcUhxqfdj7sHkWz_TvmDKfgBDZOWl7Nug=w499-h749-s-no?",
+		image: "https://upload.wikimedia.org/wikipedia/ru/b/bb/Dark_souls_3_cover_art.jpg",
 		filter: ['Action', 'RPG'],
 		developer: "Fromsoftware",
 		price: 3499,
@@ -125,7 +125,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Elden Ring",
 		description: "Action RPG, Souls-like",
-		image: "https://lh3.googleusercontent.com/eSyNtzh4ak5745mQn9iChM2qaHVgmK4aFBC-ef292Y-8QWVCOMntuHryagPHGFJOrNoI6BjQsfUC_xssps4vLcd9aJFalsoT368tk65GdfTQ4cUvOdcu2a2jKat_hBI0v1m1a2ZFlz9FzETagaT5oEIYHo6limFu2UbS8RzgTHieCXf3DFr2HgK5vkA3H8Hl42ZszDDMxZku1mpYEGepXVm84oHm4Vr9aK5SHMxLxDjWzFD8ZBjNZp4goyHUjFFnxMBqdhnC-l670iLxr2M1tkATvIuBtHEl0Cwcgmz9lgokGkIQmjwdDQwurKhfHgf5l7pqMjH4q2JYkshBzTPk_KhcC2-jLWgfDN0A5ffiycS90o0qgOgghlaX0DpgUYU71jwaZ6ZtFX9lkDEKPc8dfZC4sp_MGRJ1Zc0BnA9WgedWLyPVYc3j_mvCMF6CVP4OTBEMB1NJ11maOKUlRZNwciLOyS7tZxxg3oUz2bMYBzw2J77yqbiGWNxtb3a_yY0PjQlUtItnERPYp8GdM2mEUUOw-hy6WDkkQCllYgu_l4-M0mibLC8G5ax25_s1mFIsMqfevXkLmhMTJK_-M3Ce1LDLcyTI7gVjlyFPAawEY6579-6I7ckyPNQJIVQlBjd_8X5ITOTKrinfj3JDqYDq3bIihS5rsiMggitSTyBS6UTNHXEYF1-9q3ZGinw2_O1klBEr237CmmB-f1in0XjfOtMN2T7kF-opDT0856DAkZe6B-tIywnhNLqgPd33sP3se0f3rQSVqzd3JTvP_OOlOsKLyHCTfWGjCAkWS4IqoOtN2t2bVB3SkW05Icn8dVP4yemG82yFGMyfnbuTgaKCYSCQnOVa5BhYeD8PC7ub10xJY8S24p7h46h0NR8zIWxgVzuMcqgUBbOCaiAroSNetvlHVsxCAy4ksjcQQ55105Nhk_puV-O12Z2Wcv6xJeOgp97ABcvPZTqDYvL0iqqz1hgxgPHxFmhOTE1GSy7LaVc551D7SA=w561-h749-s-no?",
+		image: "https://upload.wikimedia.org/wikipedia/ru/7/7c/Elden_Ring_-_cover.jpg",
 		filter: ['Action', 'OpenWorld', 'RPG', 'Adventure'],
 		developer: "Fromsoftware",
 		price: 3999,
@@ -134,7 +134,7 @@ export const database:ICardItem[] = [
 	{
 		name: "Geometry Dash",
 		description: "Rhytm, Platformer",
-		image: "https://lh3.googleusercontent.com/JtSoJy6de05Bi7KWDL9c3AoXBzwrjvz302VQK3NefT158XTRmFMiqpeCaRKDBZA8rBCTv7LMWgMvSC8Hr2i0rGuuB_yx8ZOjAThGhibcQcpLJU5qiKh-_Dc8d0h7hsdqpHSPqlC1Imw37LWa2HManoJI_A5FWDQF3pyc_FhLLv031rjwItx0_RO3XfVVQgSAFbyi0lwDNuRRBJoKlaHytZHh4YawfvFBQ5oG4DfdBoaW3wDe9z-DJHJpvAyCfwMHXetYu9r9vdG15P5fiXDf0qHJu2VLhbgmNtk4c3cYw8L6Va9KvH2flTmJtkXD_JpxePqk7A1T-3l-Xhqs-DVMbZTqbn_xRkOdpv6AJhOOZIKGSRfemj4FQhXqsztKFa6297qR5hRI40eimSHFFj7XOzcWtC8dejfU9UPS0nqNcHk-vdGrYjCWZl2yCB-2mKSaf1sAvdsK8qeLXerpBeyFiq7WdtEMZYGoVFCu1g2RUR4d0NbmITCepmxNuulT6SagDEaO6YT8rBIMLDEBcSxzv9dE2a6nHwRBoVZ-pmA1v31Pj8rL2JjhT1eLVrY2nJrh4npa7vHh-TCPBHZC3waHV5soXYFGxu14Cf9cm64aACTB1GhG_QtmzjLluoLA_1qqCKaRYmmnGseLzjaN7Yez3piIcELdKN2HeLfjMMZxmFvwebECS6Hqv-aiFELYL2ObEF0J4tzUypdC4t1sDUdHxOHQgt8nCleb8u3ZYetxh39Nnc2U438itIGQ6eYCRj3UV9p7LpNvGVuStMfwv0YYuRpyT7mbDDq4GDfCrkSvpfGgP2dIPvds8n1olYZjTeenjXb19oJ8i4ubPXDJeqaJoJYzE7pOzPurucBV2uIBZzBOMrnEm6e3Vp5CkBRAnOrMW0jsJ3E7pgDJvLx4ij1Cqn7LfrIFMgcK0H-XYFuyPjbhwFvI4b3Zp7ZVbu4Tpu1xaA4bLi9nO3X0-Kpr4wqMkF_0vL8W7zFWvyTQ9JN569zx7lHXGw=w272-h380-s-no?",
+		image: "https://static-cdn.jtvnw.net/ttv-boxart/460951_IGDB-272x380.jpg",
 		filter: ['Action'],
 		developer: "RobTop Games",
 		price: 249,
