@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 //redux-toolkit
-import { useAppSelector } from '../../hooks'
+import { useAppDispatch, useAppSelector } from '../../hooks'
 import CartProduct from './CartProduct/CartProduct'
+import { clearCart } from '../../store/slices/cartSlice'
 
 //types
 import { ICardItem } from '../../Types/ICardItem'
@@ -9,42 +10,50 @@ import { ICart } from '../../Types/ICart'
 
 import './cart.style.scss'
 
-const Cart:React.FC<ICart> = ({ visibleCart }) => {
+const Cart: React.FC<ICart> = ({ visibleCart }) => {
 
-  const { cartFluid } = useAppSelector((state) => state)
+	const { cartContainer } = useAppSelector((state) => state.cartContainer)
+	const dispatch = useAppDispatch()
 
-  const fullPrice = cartFluid.reduce((accumulator:number, item:ICardItem) => {
+	const cartCleanHandler = useCallback(() => {
+		dispatch(clearCart())
+	}, [dispatch])
+
+	const fullPrice = cartContainer.reduce((accumulator: number, item: ICardItem) => {
 		return accumulator + item.price
-  }, 0)
+	}, 0)
 
-  if(visibleCart) {
+	if (visibleCart) {
 
-	return (
-		<div className='cart-menu'>
-			<div className='cart-list'>
-				{
-					cartFluid.map((item:ICardItem, index:number) => (
-						<CartProduct
-							key={index} 
-							name={item.name} 
-							description={item.description} 
-							filter={item.filter} 
-							image={item.image} 
-							price={item.price}
-							discount={item.discount}
-							id={item.id}
-						/>
-					))
-				}
+		return (
+			<div className='cart-menu'>
+				<div className='cart-list'>
+					{
+						cartContainer.map((item: ICardItem, index: number) => (
+							<CartProduct
+								key={index}
+								name={item.name}
+								description={item.description}
+								filter={item.filter}
+								image={item.image}
+								price={item.price}
+								discount={item.discount}
+								id={item.id}
+							/>
+						))
+					}
+				</div>
+				<div className='cart-confirm'>
+					<div className='cart-controls'>
+						<p className='cart-fullprice'>Итого: {fullPrice} ₽</p>
+						<button onClick={cartCleanHandler} className='confirm-button clean-cart'>Очистить корзину</button>
+					</div>
+					<button className='confirm-button'>Оформить заказ</button>
+				</div>
 			</div>
-			<div className='cart-confirm'>
-				<p className='cart-fullprice'>Итого: { fullPrice } ₽</p>
-				<button className='confirm-button'>Оформить заказ</button>
-			</div>
-		</div>
-	  )
+		)
 
-  } else { return null }
+	} else { return null }
 
 }
 

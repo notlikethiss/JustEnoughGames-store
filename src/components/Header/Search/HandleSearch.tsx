@@ -6,12 +6,12 @@ import SearchBox from './SearchBox'
 //types
 import { ISearch } from '../../../Types/ISearch'
 
-const HandleSearch:React.FC<ISearch> = ({ visibleSearch, setMobileSearch, searchValue, setSearchValue, setVisibleSearch }) => {
-	if(visibleSearch){
+const HandleSearch: React.FC<ISearch> = ({ visibleSearch, setMobileSearch, searchValue, setSearchValue, setVisibleSearch }) => {
+	if (visibleSearch) {
 		return (
-			<SearchBox 
-				searchValue={searchValue} 
-				setSearchValue={setSearchValue} 
+			<SearchBox
+				searchValue={searchValue}
+				setSearchValue={setSearchValue}
 				setVisibleSearch={setVisibleSearch}
 				setMobileSearch={setMobileSearch}
 			/>
@@ -19,6 +19,6 @@ const HandleSearch:React.FC<ISearch> = ({ visibleSearch, setMobileSearch, search
 	} else {
 		return null
 	}
-  }
+}
 
 export default HandleSearch

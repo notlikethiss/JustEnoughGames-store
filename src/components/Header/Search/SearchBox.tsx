@@ -10,40 +10,40 @@ import { database } from '../../../data/database'
 //types
 import { ISearch } from '../../../Types/ISearch'
 
-const SearchBox:React.FC<ISearch> = ({ searchValue }) => {
+const SearchBox: React.FC<ISearch> = ({ searchValue }) => {
 
-  const filteredGames = database.filter(item => {
+	const filteredGames = database.filter(item => {
+		return (
+			item.name.toLowerCase().includes(searchValue.toLowerCase())
+		)
+	})
+
 	return (
-		item.name.toLowerCase().includes(searchValue.toLowerCase())
+
+		<div className='searchBox'>
+			{
+				filteredGames.length === 0
+
+					? <NotFound /> :
+
+					filteredGames.map((item) => (
+
+						<CardItem
+							key={item.id}
+							name={item.name}
+							description={item.description}
+							filter={item.filter}
+							image={item.image}
+							price={item.price}
+							discount={item.discount}
+							id={item.id}
+						/>
+
+					))
+			}
+		</div>
+
 	)
-  })
-
-  return (
-
-	<div className='searchBox'>
-		{
-			filteredGames.length === 0 
-
-			? <NotFound /> :
-
-			filteredGames.map((item) => (
-
-				<CardItem
-					key={item.id}
-					name={item.name}
-					description={item.description}
-					filter={item.filter}
-					image={item.image}
-					price={item.price}
-					discount={item.discount}
-					id={item.id}
-              />
-
-			))
-		}
-	</div>
-
-  )
 
 }
 

@@ -11,21 +11,21 @@ import Header from './components/Header/Header'
 import { Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
 
-const App:React.FC = () => {
+const App: React.FC = () => {
 
   return (
     <div className='root-wrapper'>
-    
-      <Header/>
+
+      <Header />
 
       <Routes>
-        <Route path='/' element={<StorePage/>}/>
-        <Route path='/store' element={<StorePage/>}/>
-        <Route path='*' element={<NotFoundPage/>}/>
-        <Route path='/products/:name' element={<ProductPage />}/>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/store' element={<StorePage />} />
+        <Route path='*' element={<NotFoundPage />} />
+        <Route path='/products/:name' element={<ProductPage />} />
       </Routes>
-    
-      <Footer/>
+
+      <Footer />
     </div>
   )
 }

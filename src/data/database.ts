@@ -1,6 +1,6 @@
 import { ICardItem } from "../Types/ICardItem";
 
-export const database:ICardItem[] = [
+export const database: ICardItem[] = [
 	{
 		name: "Dead Space",
 		description: "Survival horror, Шутер",

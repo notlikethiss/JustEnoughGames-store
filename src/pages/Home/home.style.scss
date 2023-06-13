@@ -1,3 +1,133 @@
+$mainBG: #0f0f0f;
+$mainColor: #ebebeb;
+
 .home-wrapper {
-	margin-top: 100px;
+	margin: 170px 40px 100px 40px;
+}
+
+.home-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home-text {
+	text-align: center;
+	font-size: 45px;
+}
+
+.home-left {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+	width: 45vw;
+	height: 450px;
+	border-radius: 20px;
+	background: $mainBG;
+}
+
+.home-right {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 20px;
+	width: 45vw;
+	height: 450px;
+	border-radius: 20px;
+	background: $mainBG;
+
+	.carditem {
+		width: 220px;
+		height: 400px;
+	}
+}
+
+.home-image {
+	width: 300px;
+	border-radius: 20px;
+}
+
+.home-button {
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 600;
+	width: 25vw;
+	height: 45px;
+	margin: 10px 0 0 10px;
+	border-radius: 10px;
+	color: $mainColor;
+	background: #363636;
+	border: none;
+	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+	&:hover {
+		color: #292929;
+		filter: drop-shadow(0 0 25px #ffffff23);
+		background: $mainColor;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.home-text {
+		font-size: 35px;
+	}
+
+	.home-info {
+		flex-direction: column;
+	}
+
+	.home-right {
+		flex-direction: column;
+		padding: 0;
+		margin: 20px 0;
+		height: 540px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.home-text {
+		font-size: 20px;
+	}
+
+	.home-left {
+		height: 250px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.home-right {
+		justify-content: center;
+
+		height: max-content;
+
+		.carditem {
+			width: 150px;
+			height: 300px;
+		}
+	}
+}
+
+@media screen and (max-width: 350px) {
+
+	.home-text {
+		font-size: 15px
+	}
+
+	.home-right {
+		justify-content: center;
+
+		height: max-content;
+
+		.carditem {
+			width: 100px;
+			height: 250px;
+		}
+	}
 }

@@ -1,7 +1,9 @@
+$mainBG: #0f0f0f;
+$mainColor: #ebebeb;
+
 .cart-menu {
 	z-index: 15;
 	margin-right: 10px;
-	overflow-x: hidden;
 	position: absolute;
 	border-radius: 20px;
 	top: 100px;
@@ -10,9 +12,15 @@
 	flex-direction: column;
 	width: 350px;
 	height: 500px;
-    background: rgb(12 12 12 / 85%);
-    backdrop-filter: blur(55px);
+	background: rgb(12 12 12 / 85%);
+	backdrop-filter: blur(55px);
 	filter: drop-shadow(0 0 25px #000);
+	animation: show .3s;
+}
+
+.clean-cart {
+	width: calc(100% - 200px) !important;
+	margin: 0 20px;
 }
 
 .cart-wrapper {
@@ -42,7 +50,7 @@
 }
 
 .cart-fullprice {
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 700;
 	margin: 10px 0 10px 5px;
 }
@@ -64,6 +72,7 @@
 	background: #363636;
 	border: none;
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 	&:hover {
 		color: #292929;
 		background: #ebebeb;
@@ -76,9 +85,10 @@
 	margin: 10px;
 	width: 100%;
 	height: 100px;
-	background: #0f0f0f;
+	background: $mainBG;
 	border-radius: 15px;
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 	&:hover {
 		transform: scale(1.008);
 		filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.301));
@@ -98,6 +108,12 @@
 	margin: 0;
 }
 
+.cart-controls {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .cart-list::-webkit-scrollbar-track {
 	width: 10px;
 }
@@ -109,5 +125,5 @@
 
 .cart-list::-webkit-scrollbar {
 	border-radius: 10px;
-	background:  rgba(12, 12, 12, 0.781);
+	background: rgba(12, 12, 12, 0.781);
 }

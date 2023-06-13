@@ -1,7 +1,7 @@
 .product {
 	display: flex;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .product-card {
@@ -24,7 +24,7 @@
 .product-name {
 	text-align: center;
 	margin: 0 0 10px 0;
-    font-size: 50px;
+	font-size: 50px;
 	font-weight: 800;
 }
 
@@ -53,6 +53,7 @@
 	height: 40px;
 	background: #292929;
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 	&:hover {
 		color: #292929;
 		background: #ebebeb;
@@ -78,7 +79,7 @@
 	.product-name {
 		font-size: 30px;
 	}
-	
+
 	.product-price {
 		font-size: 20px;
 	}
@@ -140,7 +141,7 @@
 			width: 270px;
 			height: 370px;
 		}
-	
+
 		.product-name {
 			font-size: 40px;
 		}
@@ -159,7 +160,7 @@
 			width: 220px;
 			height: 260px;
 		}
-	
+
 		.product-name {
 			font-size: 28px;
 		}

@@ -2,15 +2,15 @@ import React from 'react'
 
 //This component deprecated
 
-const Favorite:React.FC = () => {
+const Favorite: React.FC = () => {
 
-  return (
+	return (
 
-	<div className='favorite-menu'>
+		<div className='favorite-menu'>
 
-	</div>
+		</div>
 
-  )
+	)
 }
 
 export default Favorite

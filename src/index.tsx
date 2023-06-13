@@ -10,9 +10,9 @@ import { Provider } from 'react-redux'
 import { store } from './store/store'
 
 //style
-import './index.css'
+import './index.scss'
 
-const root:ReactDOM.Root = ReactDOM.createRoot(
+const root: ReactDOM.Root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 )
 

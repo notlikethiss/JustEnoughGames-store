@@ -1,3 +1,6 @@
+$mainBG: #0f0f0f;
+$mainColor: #ebebeb;
+
 .filters {
 	display: grid;
 	grid-template-columns: repeat(10, max-content);
@@ -15,10 +18,12 @@
 	height: 35px;
 	background: #292929;
 	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 	&:hover {
 		color: #292929;
 		background: #ebebeb;
 	}
+
 	&:focus {
 		color: #292929;
 		background: #ebebeb;
@@ -28,6 +33,7 @@
 .Clean {
 	font-weight: 800;
 	background: #414141;
+
 	&:hover {
 		color: #292929;
 		background: #ebebeb;

@@ -5,15 +5,15 @@ import React from 'react'
 //styles
 import './menu.style.scss'
 
-const Menu:React.FC = () => {
+const Menu: React.FC = () => {
 
-  return (
+	return (
 
-	<div className='menu'>
-		
-	</div>
+		<div className='menu'>
 
-  )
+		</div>
+
+	)
 }
 
 export default Menu

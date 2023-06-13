@@ -11,32 +11,32 @@ import { IFilterState } from '../../Types/IFilterState'
 
 import './filters.style.scss'
 
-const Filters:React.FC<IFilterState> = ({ setFilter, filter }) => {
+const Filters: React.FC<IFilterState> = ({ setFilter, filter }) => {
 
-  return (
+	return (
 
-	<div className='filters'>
+		<div className='filters'>
 
 			<FilterButton
-				filter={''} 
-				filterName={'Очистить фильтры'} 
-				setFilter={setFilter} 
+				filter={''}
+				filterName={'Очистить фильтры'}
+				setFilter={setFilter}
 				clean={true}
 			/>
-		{
-			filters.map((item, index) => (
-				<FilterButton 
-					key={index} 
-					filter={item.filter} 
-					filterName={item.filterName} 
-					setFilter={setFilter}
-				/>
-			))
-		}
+			{
+				filters.map((item, index) => (
+					<FilterButton
+						key={index}
+						filter={item.filter}
+						filterName={item.filterName}
+						setFilter={setFilter}
+					/>
+				))
+			}
 
-	</div>
+		</div>
 
-  )
+	)
 }
 
 export default Filters

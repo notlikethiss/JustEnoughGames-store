@@ -26,8 +26,9 @@
 	top: 100px;
 	border-radius: 15px;
 	position: absolute;
-    background: rgb(12 12 12 / 85%);
-    backdrop-filter: blur(55px);
+	background: rgb(12 12 12 / 85%);
+	backdrop-filter: blur(55px);
+	animation: show .3s;
 }
 
 .searchBox::-webkit-scrollbar-track {
@@ -42,18 +43,18 @@
 .searchBox::-webkit-scrollbar {
 	margin: 0;
 	border-radius: 10px;
-	background:  rgba(12, 12, 12, 0.781);
+	background: rgba(12, 12, 12, 0.781);
 }
 
 .search-notfound {
-    top: 200px;
-    overflow: hidden;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: max-content;
+	top: 200px;
+	overflow: hidden;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: max-content;
 }
 
 .search-image {

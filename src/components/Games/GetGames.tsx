@@ -9,36 +9,35 @@ import { database } from '../../data/database'
 //types
 import { IFilterState } from '../../Types/IFilterState'
 
-const GetGames:React.FC<IFilterState> = ({ filter }) => {
+const GetGames: React.FC<IFilterState> = ({ filter }) => {
 
-  return (
-
-	<div className='store-grid'>
+	return (
+		<div className='store-grid'>
 			{
 				database.map((item) => {
-					for(let i = 0; i < item.filter.length; i++){
-						if(item.filter[i] === filter){
+					for (let i = 0; i < item.filter.length; i++) {
+						if (item.filter[i] === filter) {
 							return (
-								<CardItem 
-									key={item.id} 
-									name={item.name} 
-									description={item.description} 
-									filter={item.filter} 
-									image={item.image} 
+								<CardItem
+									key={item.id}
+									name={item.name}
+									description={item.description}
+									filter={item.filter}
+									image={item.image}
 									price={item.price}
 									discount={item.discount}
 									id={item.id}
 								/>
 							)
 						}
-						if(!filter){
+						if (!filter) {
 							return (
 								<CardItem
-									key={item.id} 
-									name={item.name} 
-									description={item.description} 
-									filter={item.filter} 
-									image={item.image} 
+									key={item.id}
+									name={item.name}
+									description={item.description}
+									filter={item.filter}
+									image={item.image}
 									price={item.price}
 									discount={item.discount}
 									id={item.id}
@@ -50,8 +49,7 @@ const GetGames:React.FC<IFilterState> = ({ filter }) => {
 				})
 			}
 		</div>
-
-  )
+	)
 }
 
 export default GetGames
