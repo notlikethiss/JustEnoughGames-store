@@ -51,7 +51,7 @@ export const database: ICardItem[] = [
 	{
 		name: "Diablo IV",
 		description: "Action/RPG, Rougelike",
-		image: "https://blz-contentstack-images.akamaized.net/v3/assets/blt77f4425de611b362/blt6d7b0fd8453e72b9/646e720a71d9db111a265e8c/d4-open-graph_001.jpg",
+		image: "https://img.championat.com/news/big/v/r/kupit-diablo-4-v-rossii_16855332561265603598.jpg",
 		filter: ['Action', 'RPG', 'Rougelike'],
 		developer: "Blizzard Entertainment",
 		price: 3999,
