@@ -29,6 +29,7 @@
 	background: rgb(12 12 12 / 85%);
 	backdrop-filter: blur(55px);
 	animation: show .3s;
+	scrollbar-gutter: stable;
 }
 
 .searchBox::-webkit-scrollbar-track {

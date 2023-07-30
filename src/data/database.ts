@@ -107,7 +107,7 @@ export const database: ICardItem[] = [
 	{
 		name: "Dark Souls II : Scholar of The First Sin",
 		description: "Action RPG, Souls-like",
-		image: "https://m.media-amazon.com/images/M/MV5BYTI2MjE0YjQtYTc0Ni00Yzc4LTlkZWEtODMxZjA2ZWMyYjViXkEyXkFqcGdeQXVyMTI0MzA4NTgw._V1_.jpg",
+		image: "https://static.gabestore.ru/product/UZAKAON6PxK36sFZnTbNXXXniwBqiWgy.jpg",
 		filter: ['Action', 'RPG'],
 		developer: "Fromsoftware",
 		price: 2499,
