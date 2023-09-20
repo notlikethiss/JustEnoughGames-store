@@ -25,6 +25,11 @@
 .footer-image {
 	margin: 0 10px;
 	width: 45px;
+	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+	&:hover {
+		filter: brightness(0.6);
+	}
 }
 
 .telegram {
