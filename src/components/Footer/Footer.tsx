@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
 						<Link to={'https://github.com/notlikethiss'}>
 							<img src='https://i.imgur.com/M8hfcAn.png' alt='github' className='footer-image' />
 						</Link>
-						<Link to={'https://t.me/notlikethisss'}>
+						<Link to={'https://t.me/agreatcchaos'}>
 							<img src='https://i.imgur.com/K93hlNg.png' alt='telegram' className='footer-image telegram' />
 						</Link>
 					</div>
