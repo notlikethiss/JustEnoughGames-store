@@ -1,13 +1,13 @@
-import type { FC } from 'react'
-
 //components
 import SearchBox from './SearchBox'
 
 //types
-import { ISearch } from '../../../Types/ISearch'
+import type { FC } from 'react'
+import type { ISearch } from '../../../Types/ISearch'
 
 const HandleSearch: FC<ISearch> = ({
     visibleSearch,
+    toggleAllPopups,
     setMobileSearch,
     searchValue,
     setSearchValue,
@@ -16,6 +16,7 @@ const HandleSearch: FC<ISearch> = ({
     if (visibleSearch) {
         return (
             <SearchBox
+                toggleAllPopups={toggleAllPopups}
                 searchValue={searchValue}
                 setSearchValue={setSearchValue}
                 setVisibleSearch={setVisibleSearch}
