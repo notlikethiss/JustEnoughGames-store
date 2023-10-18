@@ -1,273 +1,276 @@
 @mixin rotateAnimation() {
-	cursor: pointer;
-	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-	&:hover {
-		transform: rotate(90deg);
-	}
+    &:hover {
+        transform: rotate(90deg);
+    }
 }
 
 @mixin hoverAnimation() {
-	cursor: pointer;
-	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-	&:hover {
-		filter: brightness(0.6);
-	}
+    &:hover {
+        filter: brightness(0.6);
+    }
 }
 
 @mixin flexCenter() {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
-	z-index: 10;
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	top: 0;
-	position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    position: fixed;
 }
 
 .internal-header {
-	z-index: 10;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	background: rgb(12 12 12 / 85%);
-	backdrop-filter: blur(55px);
-	width: calc(100% - 20px);
-	border-radius: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(12 12 12 / 85%);
+    backdrop-filter: blur(55px);
+    width: calc(100% - 20px);
+    border-radius: 20px;
 }
 
 .right-side {
-	@include flexCenter();
+    @include flexCenter();
 }
 
 .left-side {
-	@include flexCenter();
-	width: 300px;
-	white-space: nowrap;
+    @include flexCenter();
+    width: 300px;
+    white-space: nowrap;
 }
 
 .menu-image {
-	width: 35px;
-	height: 35px;
+    width: 35px;
+    height: 35px;
 }
 
 .menu-button {
-	@include hoverAnimation();
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 50px 0 20px;
-	width: 35px;
-	height: 35px;
+    @include hoverAnimation();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px 0 20px;
+    width: 35px;
+    height: 35px;
 }
 
 .logo-font {
-	@include hoverAnimation();
+    @include hoverAnimation();
 }
 
 .search-button-mobile {
-	@include hoverAnimation();
-	display: none;
-	justify-content: center;
-	align-items: center;
-	width: 25px;
-	height: 25px;
-	margin: 0 40px 0 20px;
+    @include hoverAnimation();
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin: 0 40px 0 20px;
 }
 
 .search-icon-mobile {
-	width: 25px;
-	height: 25px;
+    width: 25px;
+    height: 25px;
 }
 
 .header-link {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .center {
-	width: 50%;
-	flex-direction: column;
-	@include flexCenter();
+    width: 50%;
+    flex-direction: column;
+    @include flexCenter();
 }
 
 .favorite {
-	cursor: pointer;
-	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-	margin: 0 30px 0 30px;
-	width: 35px;
-	height: 35px;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 0 30px 0 30px;
+    width: 35px;
+    height: 35px;
 
-	&:hover {
-		filter: brightness(0.6);
-	}
+    &:hover {
+        filter: brightness(0.6);
+    }
 }
 
 .overlay {
-	z-index: 5;
-	user-select: all;
-	position: absolute;
-	width: 100%;
-	height: 1000vh;
-	background: rgb(0 0 0 / 70%);
-	backdrop-filter: blur(20px);
-	animation: show .3s;
+    z-index: 5;
+    user-select: all;
+    position: absolute;
+    width: 100%;
+    height: 1000vh;
+    background: rgb(0 0 0 / 70%);
+    backdrop-filter: blur(20px);
+    animation: show 0.3s;
 }
 
 .cart-counter {
-	z-index: 20;
-	position: absolute;
-	color: #000;
-	font-size: 15px;
-	font-weight: 700;
-	margin-left: 5px;
+    z-index: 20;
+    position: absolute;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 5px;
 }
 
 .cart {
-	width: 40px;
-	height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 .cart-panel {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 50px;
-	height: 100%;
-	cursor: pointer;
-	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-	&:hover {
-		filter: brightness(0.6);
-	}
+    &:hover {
+        filter: brightness(0.6);
+    }
 }
 
 @media screen and (max-width: 980px) {
-	.logo-font {
-		font-size: 20px;
-	}
+    .logo-font {
+        font-size: 20px;
+    }
 
-	.favorite {
-		width: 30px;
-		height: 30px;
-	}
+    .favorite {
+        width: 30px;
+        height: 30px;
+    }
 
-	.cart {
-		width: 30px;
-		height: 30px;
-	}
+    .cart {
+        width: 30px;
+        height: 30px;
+    }
 
-	.menu-image {
-		width: 20px;
-		height: 20px;
-	}
-
+    .menu-image {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media screen and (max-width: 620px) {
+    .internal-header {
+        border-radius: 15px;
+    }
 
-	.internal-header {
-		border-radius: 15px;
-	}
+    .logo-font {
+        font-size: 18px;
+    }
 
-	.logo-font {
-		font-size: 18px;
-	}
+    .menu-button {
+        display: none;
+    }
 
-	.menu-button {
-		display: none;
-	}
+    .search-button-mobile {
+        display: flex;
+    }
 
-	.search-button-mobile {
-		display: flex;
-	}
+    .right-side {
+        display: flex;
 
-	.right-side {
-		display: flex;
+        .favorite {
+            display: none;
+        }
 
-		.favorite {
-			display: none;
-		}
+        .cart-panel {
+            margin: 0 10px;
+        }
+    }
 
-		.cart-panel {
-			margin: 0 10px;
-		}
-	}
+    .new-games-text {
+        font-size: 40px;
+    }
 
-	.new-games-text {
-		font-size: 40px;
-	}
+    .center {
+        width: 0;
+    }
 
-	.center {
-		width: 0;
-	}
+    .search {
+        display: none;
+    }
 
-	.search {
-		display: none;
-	}
+    .search-mobile {
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 32px;
+        width: calc(100% - 75px);
+        background: #181818ec;
+        border: none;
+        z-index: 10;
+        font-size: 15px;
+        height: 35px;
+        border-radius: 10px;
+        outline: none;
+        padding-left: 15px;
+        color: #b6b6b6;
+        transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
+        animation: show 0.3s;
+    }
 
-	.search-mobile {
-		display: block;
-		position: absolute;
-		top: 50px;
-		left: 20px;
-		width: calc(100% - 50px);
-		background: #181818ec;
-		border: none;
-		z-index: 10;
-		font-size: 15px;
-		height: 35px;
-		border-radius: 10px;
-		outline: none;
-		padding-left: 15px;
-		color: #b6b6b6;
-		transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
-		animation: show .3s;
-	}
+    .searchBox {
+        grid-template-columns: repeat(2, 130px);
+        gap: 20px;
 
-	.searchBox {
-		grid-template-columns: repeat(2, 130px);
-		gap: 20px;
+        .card-button-container {
+            white-space: nowrap;
+        }
 
-		.carditem {
-			width: 130px;
-			height: 300px;
+        .carditem {
+            width: 130px;
+            height: 300px;
 
-			.carditem-price {
-				font-size: 14px;
-			}
+            .carditem-price {
+                font-size: 14px;
+            }
 
-			.carditem-discount {
-				font-size: 12px;
-			}
-		}
+            .carditem-discount {
+                font-size: 12px;
+            }
+        }
 
-		transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
-		animation: show .3s;
-	}
+        transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
+        animation: show 0.3s;
+    }
 
-	.search-notfound {
-		flex-direction: column;
+    .search-notfound {
+        flex-direction: column;
 
-		.search-notfound-text {
-			font-size: 30px;
-		}
-	}
+        .search-notfound-text {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
 }
 
 @keyframes show {
-	from {
-		opacity: 0;
-	}
+    from {
+        opacity: 0;
+    }
 
-	to {
-		opacity: 1;
-	}
+    to {
+        opacity: 1;
+    }
 }

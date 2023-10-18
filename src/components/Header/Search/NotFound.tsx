@@ -1,20 +1,15 @@
-import React from 'react'
+import type { FC } from 'react'
+import Emoji from '../../Emoji/Emoji'
 
-const NotFound = () => {
-
-	return (
-
-		<div className='search-notfound'>
-			<h1 className='search-notfound-text'>Не удалось найти по вашему запросу</h1>
-			<img
-				alt='emoji'
-				className='search-image'
-				src='https://em-content.zobj.net/thumbs/160/apple/118/pensive-face_1f614.png'
-			>
-			</img>
-		</div>
-
-	)
+const NotFound: FC = () => {
+    return (
+        <div className="search-notfound">
+            <h1 className="search-notfound-text">
+                Не удалось найти по вашему запросу
+            </h1>
+            <Emoji variant="inSearch" src="/emojis/pensive.png" />
+        </div>
+    )
 }
 
 export default NotFound

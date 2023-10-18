@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 //components
 import Logo from './Logo/Logo'
@@ -10,61 +10,64 @@ import Cart from '../Cart/Cart'
 import './header.style.scss'
 import HandleSearch from './Search/HandleSearch'
 
-const Header: React.FC = () => {
+//types
+import type { FC } from 'react'
 
-	const [visibleSearch, setVisibleSearch] = useState<boolean>(false)
-	const [visibleCart, setVisibleCart] = useState<boolean>(false)
-	const [mobileSearch, setMobileSearch] = useState<boolean>(false)
+const Header: FC = () => {
+    const [visibleSearch, setVisibleSearch] = useState<boolean>(false)
+    const [visibleCart, setVisibleCart] = useState<boolean>(false)
+    const [mobileSearch, setMobileSearch] = useState<boolean>(false)
 
-	const [searchValue, setSearchValue] = useState<string>('')
+    const [searchValue, setSearchValue] = useState<string>('')
 
-	const toggleAllPopups = () => {
-		setVisibleCart(false);
-		setMobileSearch(false);
-		setVisibleSearch(false);
-		setSearchValue('');
-	}
+    const toggleAllPopups = () => {
+        setVisibleCart(false)
+        setMobileSearch(false)
+        setVisibleSearch(false)
+        setSearchValue('')
+    }
 
-	return (
-		<header className='header'>
-			<div className='internal-header'>
+    return (
+        <header className="header">
+            <div className="internal-header">
+                <Logo
+                    setVisibleSearch={setVisibleSearch}
+                    setMobileSearch={setMobileSearch}
+                    toggleAllPopups={toggleAllPopups}
+                    searchValue={searchValue}
+                    setSearchValue={setSearchValue}
+                    mobileSearch={mobileSearch}
+                />
+                <Search
+                    setVisibleSearch={setVisibleSearch}
+                    setMobileSearch={setMobileSearch}
+                    toggleAllPopups={toggleAllPopups}
+                    searchValue={searchValue}
+                    setSearchValue={setSearchValue}
+                    mobileSearch={mobileSearch}
+                />
+                <ActionPanel
+                    visibleCart={visibleCart}
+                    setVisibleCart={setVisibleCart}
+                />
+            </div>
 
-				<Logo
-					setVisibleSearch={setVisibleSearch}
-					setMobileSearch={setMobileSearch}
-					searchValue={searchValue}
-					setSearchValue={setSearchValue}
-					mobileSearch={mobileSearch}
-				/>
-				<Search
-					setVisibleSearch={setVisibleSearch}
-					setMobileSearch={setMobileSearch}
-					searchValue={searchValue}
-					setSearchValue={setSearchValue}
-					mobileSearch={mobileSearch}
-				/>
-				<ActionPanel visibleCart={visibleCart} setVisibleCart={setVisibleCart} />
+            <HandleSearch
+                setVisibleSearch={setVisibleSearch}
+                toggleAllPopups={toggleAllPopups}
+                setSearchValue={setSearchValue}
+                setMobileSearch={setMobileSearch}
+                visibleSearch={visibleSearch}
+                searchValue={searchValue}
+                mobileSearch={mobileSearch}
+            />
+            <Cart setVisibleCart={setVisibleCart} visibleCart={visibleCart} />
 
-			</div>
-
-			<HandleSearch
-				setVisibleSearch={setVisibleSearch}
-				setSearchValue={setSearchValue}
-				setMobileSearch={setMobileSearch}
-				visibleSearch={visibleSearch}
-				searchValue={searchValue}
-				mobileSearch={mobileSearch}
-			/>
-			<Cart
-				setVisibleCart={setVisibleCart}
-				visibleCart={visibleCart}
-			/>
-
-			{visibleCart || visibleSearch || mobileSearch ? <div onClick={() => toggleAllPopups()} className='overlay' /> : null}
-
-		</header>
-
-	)
+            {visibleCart || visibleSearch || mobileSearch ? (
+                <div onClick={() => toggleAllPopups()} className="overlay" />
+            ) : null}
+        </header>
+    )
 }
 
 export default Header
