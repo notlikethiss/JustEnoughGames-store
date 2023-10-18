@@ -1,5 +1,6 @@
 //components
 import SearchBox from './SearchBox'
+import { useEffect } from 'react'
 
 //types
 import type { FC } from 'react'
@@ -13,6 +14,15 @@ const HandleSearch: FC<ISearch> = ({
     setSearchValue,
     setVisibleSearch,
 }) => {
+    useEffect(() => {
+        window.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                setSearchValue('')
+                toggleAllPopups()
+            }
+        })
+    }, [setSearchValue, toggleAllPopups])
+
     if (visibleSearch) {
         return (
             <SearchBox

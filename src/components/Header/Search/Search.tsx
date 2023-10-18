@@ -19,7 +19,7 @@ const Search: FC<ISearch> = ({
         } else {
             setVisibleSearch(false)
         }
-    })
+    }, [searchValue, mobileSearch, setVisibleSearch])
 
     return (
         <div className="center">
@@ -27,6 +27,7 @@ const Search: FC<ISearch> = ({
                 type="text"
                 onChange={(event) => setSearchValue(event.currentTarget.value)}
                 placeholder="Поиск"
+                value={searchValue}
                 className={!mobileSearch ? 'search' : 'search-mobile'}
             ></input>
         </div>
