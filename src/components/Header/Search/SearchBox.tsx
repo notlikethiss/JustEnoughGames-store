@@ -9,7 +9,7 @@ import { database } from '../../../data/database'
 import type { ISearch } from '../../../Types/ISearch'
 import type { FC } from 'react'
 
-const SearchBox: FC<ISearch> = ({ searchValue }) => {
+const SearchBox: FC<ISearch> = ({ searchValue, toggleAllPopups }) => {
     const filteredGames = database.filter((item) => {
         return item.name.toLowerCase().includes(searchValue.toLowerCase())
     })

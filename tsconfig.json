@@ -5,6 +5,7 @@
     "types": ["vite/client"],
     "isolatedModules": true,
     "strict": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
