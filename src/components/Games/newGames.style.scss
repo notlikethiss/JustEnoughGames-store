@@ -1,84 +1,93 @@
 .store-grid {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-	gap: 35px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    gap: 35px;
 }
 
 .new-games {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .new-games-text {
-	margin: 50px;
-	text-align: left;
-	font-size: 55px;
+    margin: 50px;
+    text-align: center;
+    font-size: 55px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1800px) {
-	.store-grid {
-		grid-template-columns: repeat(5, 1fr);
-	}
+    .store-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 @media screen and (max-width: 1500px) {
-	.store-grid {
-		grid-template-columns: repeat(4, 1fr);
-	}
+    .store-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media screen and (max-width: 1200px) {
-	.store-grid {
-		grid-template-columns: repeat(3, 1fr);
-	}
+    .store-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-	.carditem {
-		width: 230px;
-		height: 420px;
+    .carditem {
+        width: 230px;
+        height: 420px;
 
-		.carditem-name {
-			font-size: 20px;
-		}
+        .carditem-name {
+            font-size: 20px;
+        }
 
-		.carditem-description {
-			white-space: normal;
-		}
-	}
+        .carditem-description {
+            white-space: normal;
+        }
+    }
 }
 
 @media screen and (max-width: 900px) {
-	.store-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
+    .store-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 600px) {
-	.store-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
+    .store-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-	.carditem {
-		width: 150px;
-		height: 320px;
+    .carditem {
+        width: 150px;
+        height: 320px;
 
-		.carditem-name {
-			font-size: 16px;
-		}
+        .carditem-name {
+            font-size: 16px;
+        }
 
-		.carditem-description {
-			font-size: 12px;
-		}
+        .carditem-description {
+            font-size: 12px;
+        }
 
-		.carditem-discount {
-			font-size: 12px;
-		}
+        .carditem-discount {
+            font-size: 12px;
+        }
 
-		.carditem-price {
-			font-size: 17px
-		}
-	}
+        .carditem-price {
+            font-size: 17px;
+        }
+    }
+}
+
+.developer-pick {
+    .pick-heading {
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+    }
 }

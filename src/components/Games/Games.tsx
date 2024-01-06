@@ -6,6 +6,7 @@ import GetGames from './GetGames'
 
 //styles
 import './newGames.style.scss'
+import DeveloperPick from './DeveloperPick'
 
 const Games: FC = () => {
     const [filter, setFilter] = useState('')
@@ -13,6 +14,7 @@ const Games: FC = () => {
     return (
         <div className="new-games">
             <Filters filter={filter} setFilter={setFilter} />
+            <DeveloperPick />
             <h1 className="new-games-text">Каталог</h1>
             <GetGames filter={filter} setFilter={setFilter} />
         </div>
