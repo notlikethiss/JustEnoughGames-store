@@ -98,7 +98,7 @@ export const database: ICardItem[] = [
     {
         name: 'Dark Souls Remastered',
         description: 'Action RPG, Souls-like',
-        image: 'https://media.discordapp.net/attachments/888505536457367552/1102015542631596114/Dark_Souls_Remastered.webp?width=433&height=554',
+        image: 'https://assets1.ignimgs.com/2018/10/18/darksoulsremastered-1280-1539846640939_160w.jpg?width=1280',
         filter: ['Action', 'RPG'],
         developer: 'Fromsoftware',
         price: 1599,
@@ -146,7 +146,7 @@ export const developerPick: ICardItem[] = [
     {
         name: 'Dark Souls Remastered',
         description: 'Action RPG, Souls-like',
-        image: 'https://media.discordapp.net/attachments/888505536457367552/1102015542631596114/Dark_Souls_Remastered.webp?width=433&height=554',
+        image: 'https://assets1.ignimgs.com/2018/10/18/darksoulsremastered-1280-1539846640939_160w.jpg?width=1280',
         filter: ['Action', 'RPG'],
         developer: 'Fromsoftware',
         price: 1599,

@@ -123,10 +123,14 @@
 .cart-counter {
     z-index: 20;
     position: absolute;
+    padding: 2px;
     color: #000;
     font-size: 15px;
     font-weight: 700;
-    margin-left: 5px;
+    margin-top: 30px;
+    margin-left: 25px;
+    background: #fff;
+    border-radius: 50%;
 }
 
 .cart {

@@ -22,6 +22,7 @@ const SearchBox: FC<ISearch> = ({ searchValue, toggleAllPopups }) => {
                 filteredGames.map((item) => (
                     <CardItem
                         key={item.id}
+                        toggleAllPopups={toggleAllPopups}
                         name={item.name}
                         description={item.description}
                         filter={item.filter}

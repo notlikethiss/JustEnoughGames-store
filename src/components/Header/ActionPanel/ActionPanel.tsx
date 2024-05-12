@@ -22,7 +22,7 @@ const ActionPanel: FC<ICart> = ({ visibleCart, setVisibleCart }) => {
                 <img
                     className="cart"
                     alt="cart"
-                    src="https://media.discordapp.net/attachments/888505536457367552/1101961803883368598/icons8-shopping-cart-90.png"
+                    src="/emojis/cart-icon.png"
                 ></img>
             </div>
         </div>
