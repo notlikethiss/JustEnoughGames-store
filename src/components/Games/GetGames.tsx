@@ -10,44 +10,41 @@ import { database } from '../../data/database'
 import { IFilterState } from '../../Types/IFilterState'
 
 const GetGames: React.FC<IFilterState> = ({ filter }) => {
-
 	return (
-		<div className='store-grid'>
-			{
-				database.map((item) => {
-					for (let i = 0; i < item.filter.length; i++) {
-						if (item.filter[i] === filter) {
-							return (
-								<CardItem
-									key={item.id}
-									name={item.name}
-									description={item.description}
-									filter={item.filter}
-									image={item.image}
-									price={item.price}
-									discount={item.discount}
-									id={item.id}
-								/>
-							)
-						}
-						if (!filter) {
-							return (
-								<CardItem
-									key={item.id}
-									name={item.name}
-									description={item.description}
-									filter={item.filter}
-									image={item.image}
-									price={item.price}
-									discount={item.discount}
-									id={item.id}
-								/>
-							)
-						}
+		<div className="store-grid">
+			{database.map((item) => {
+				for (let i = 0; i < item.filter.length; i++) {
+					if (item.filter[i] === filter) {
+						return (
+							<CardItem
+								key={item.id}
+								name={item.name}
+								description={item.description}
+								filter={item.filter}
+								image={item.image}
+								price={item.price}
+								discount={item.discount}
+								id={item.id}
+							/>
+						)
 					}
-					return null
-				})
-			}
+					if (!filter) {
+						return (
+							<CardItem
+								key={item.id}
+								name={item.name}
+								description={item.description}
+								filter={item.filter}
+								image={item.image}
+								price={item.price}
+								discount={item.discount}
+								id={item.id}
+							/>
+						)
+					}
+				}
+				return null
+			})}
 		</div>
 	)
 }

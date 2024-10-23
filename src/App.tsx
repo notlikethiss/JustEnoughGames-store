@@ -12,22 +12,20 @@ import { Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
 
 const App: React.FC = () => {
+    return (
+        <div className="root-wrapper">
+            <Header />
 
-  return (
-    <div className='root-wrapper'>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/store" element={<StorePage />} />
+                <Route path="*" element={<NotFoundPage />} />
+                <Route path="/products/:name" element={<ProductPage />} />
+            </Routes>
 
-      <Header />
-
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/store' element={<StorePage />} />
-        <Route path='*' element={<NotFoundPage />} />
-        <Route path='/products/:name' element={<ProductPage />} />
-      </Routes>
-
-      <Footer />
-    </div>
-  )
+            <Footer />
+        </div>
+    )
 }
 
 export default App
