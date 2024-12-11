@@ -134,13 +134,13 @@ $mainColor: #ebebeb;
 .cart-email {
     display: flex;
     align-items: center
+}
 
-        input {
-                background: #33333360;
+.email-input {
+    background: #33333360;
     border-radius: 10px;
     border: none;
     outline: none;
     padding-left: 15px;
     color: #b6b6b6;
-            }
 }
