@@ -130,3 +130,17 @@ $mainColor: #ebebeb;
     border-radius: 10px;
     background: rgba(12, 12, 12, 0.781);
 }
+
+.cart-email {
+    display: flex;
+    align-items: center
+
+        input {
+                background: #33333360;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    color: #b6b6b6;
+            }
+}
