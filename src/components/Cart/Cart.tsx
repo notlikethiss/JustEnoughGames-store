@@ -44,7 +44,7 @@ const Cart: React.FC<ICart> = ({ visibleCart }) => {
                 </div>
                 <div className="cart-email">
                     <p>Email для чека:</p>
-                    <input type="text"/>
+                    <input className="email-input" type="text"/>
                 </div>
                 <div className="cart-confirm">
                     <div className="cart-controls">
