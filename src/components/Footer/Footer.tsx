@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
 								className="footer-image"
 							/>
 						</Link>
-						<Link to={'https://t.me/archenjoyerr'}>
+						<Link to={'https://t.me/ingwarddev'}>
 							<img
 								src="https://i.imgur.com/K93hlNg.png"
 								alt="telegram"
